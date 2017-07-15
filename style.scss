@@ -30,10 +30,17 @@ body,
     align-items: center;
 }
 
+body {
+     overflow-x: scroll;
+     min-width: $containerWidth;
+     padding: 0 10px;
+}
+
 .container {
-    padding: 25px 0;
+    padding-left: 10px 0;
+    max-width: $containerWidth;    
     height: $containerHeight;
-    width: $containerWidth;
+   
     .profileCard {
         margin: auto;
         padding: 15px;
