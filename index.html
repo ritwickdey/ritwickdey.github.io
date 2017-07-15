@@ -1,1 +1,78 @@
-"hello" 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>About Me</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/css/style.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="profileCard">
+            <div class="profilePic">
+                <img src="https://graph.facebook.com/100004473242124/picture?type=large&width=720&height=720" alt="My profile Pic">
+            </div>
+            <div class="profileDetails">
+                <div class="Name">Ritwick Dey</div>
+                <div class="tagLine">Student Developer</div>
+                <div class="bio">
+                    Coding is my fashion. I wish I'll be a Full Stack Developer. 
+                </div>
+            </div>
+        </div>
+       
+        <div class="devCard">
+            <span class="devicon-c-plain-wordmark"></span>
+            <span class="devicon-csharp-plain-wordmark"> </span>
+            <span class="devicon-dot-net-plain-wordmark"></span>
+            <span class="devicon-visualstudio-plain"></span>
+            <span class="devicon-javascript-plain"></span>
+            <span class="devicon-typescript-plain"></span>
+            <span class="devicon-angularjs-plain"></span>
+            <span class="devicon-html5-plain"></span>
+          
+        </div>
+        
+
+        <div class="contactCard">
+            <span onclick="OnContactSpanClick('fb')" class="devicon-facebook-plain colored"></span>
+            <span onclick="OnContactSpanClick('twitter')" class="devicon-twitter-plain colored"> </span>
+            <span onclick="OnContactSpanClick('github')" class="devicon-github-plain colored"></span>
+            <span onclick="OnContactSpanClick('email')">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+						<path d="M17.388,4.751H2.613c-0.213,0-0.389,0.175-0.389,0.389v9.72c0,0.216,0.175,0.389,0.389,0.389h14.775c0.214,0,0.389-0.173,0.389-0.389v-9.72C17.776,4.926,17.602,4.751,17.388,4.751 M16.448,5.53L10,11.984L3.552,5.53H16.448zM3.002,6.081l3.921,3.925l-3.921,3.925V6.081z M3.56,14.471l3.914-3.916l2.253,2.253c0.153,0.153,0.395,0.153,0.548,0l2.253-2.253l3.913,3.916H3.56z M16.999,13.931l-3.921-3.925l3.921-3.925V13.931z"></path>
+				</svg>
+
+            </span>
+        </div>
+
+    </div>
+
+</body>
+
+<script>
+   function OnContactSpanClick(param) {
+      switch (param) {
+        case 'fb':
+            window.open("https://facebook.com/DeyRitwick", '_blank');
+            break;
+         case 'twitter':
+            window.open("https://twitter.com/Dey_Ritwick", '_blank');
+            break;
+        case 'github':
+            window.open("https://github.com/ritwickdey", '_blank');
+            break;
+        case 'email':
+            window.open("mailto://ritwickdey@outlook.com", '_blank');
+            break;
+        default:
+            console.log("error");
+            break;
+      }
+    }
+</script>
+
+</html>
