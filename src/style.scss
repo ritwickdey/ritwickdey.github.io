@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+$profilePicHeightWidth: 110px;
+$containerHeight: 300px;
+$containerWidth: 510px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: #415a74;
+}
+
+body,
+.profileCard,
+.contactCard,
+.devCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    padding: 25px 0;
+    height: $containerHeight;
+    width: $containerWidth;
+    .profileCard {
+        margin: auto;
+        padding: 15px;
+        background-color: #ECF0F1;
+        .profilePic {
+            flex-direction: row;
+            margin: auto;
+        }
+        .profilePic>img {
+            border-radius: 50%;
+            height: $profilePicHeightWidth;
+            width: $profilePicHeightWidth;
+        }
+        .profileDetails {
+            padding-left: 20px;
+            color: #000;
+            font-size: 100%;
+            font-weight: 400;
+            .Name {
+                font-size: 35px;
+                line-height: 0.8;
+            }
+            .tagLine {
+                font-size: 18px;
+                font-style: italic;
+                line-height: 1.8;
+                color: #1E5DAD;
+            }
+            .bio {
+                padding-top: 5px;
+                font-size: 16px;
+                line-height: 1.2;
+                font-weight: 300;
+            }
+        }
+    }
+    .devCard,
+    .contactCard {
+        background-color: #ECF0F1;
+        padding: 8px 0;
+        font-size: 28px;
+        color: #000000;
+        
+    }
+    .profileCard,
+    .devCard,
+    .contactCard {
+        border-radius: 5px;
+        box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.4);
+        position: relative;
+    }
+    .profileCard {
+        z-index: 3;
+    }
+
+    .devCard {
+        z-index: 2;
+        margin: 0 10px;
+        span {
+            padding: 5px 10px
+        }
+    }
+    .contactCard {
+        z-index: 1;
+        margin: 0 20px;
+        span {
+            padding: 0px 10px
+        }
+        span:hover {
+           transform: scale(1.3);
+           transition: all 0.2s;
+           cursor: pointer;
+        }
+    }
+}
+
+.svg-icon {
+    width: 1em;
+    height: 1em;
+    color: #000;
+    font-size: 38px;
+    margin: -9px 0;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+    fill: #4691f6;
+}
+
+.svg-icon circle {
+    stroke: #4691f6;
+    stroke-width: 1;
+}
