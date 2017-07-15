@@ -4,5 +4,5 @@
     
     "liveSassCompile.settings.savePath": "/css",
     "liveServer.settings.port": 5300,
-    "liveServer.settings.root": "/src"
+    "liveServer.settings.root": "/"
 }
