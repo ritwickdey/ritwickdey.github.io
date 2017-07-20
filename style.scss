@@ -2,7 +2,7 @@
 $profilePicHeightWidth: 110px;
 $containerHeight: 300px;
 $containerWidth: 510px;
-$borderRadius: 6px;
+$borderRadius: 7px;
 * {
     margin: 0;
     padding: 0;
@@ -137,6 +137,8 @@ svg#email {
     height: 45px;
     fill: #4691f6;
 }
+
+
 
 @keyframes devCardMove {
     0% {
