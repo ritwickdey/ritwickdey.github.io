@@ -3,7 +3,6 @@ $profilePicHeightWidth: 110px;
 $containerHeight: 300px;
 $containerWidth: 510px;
 $borderRadius: 6px;
-
 * {
     margin: 0;
     padding: 0;
@@ -31,16 +30,17 @@ body,
 }
 
 body {
-     overflow-x: scroll;
-     min-width: $containerWidth;
-     padding: 0 10px;
+   
+    min-width: $containerWidth;
+    padding: 0 10px;
 }
 
 .container {
     padding-left: 10px 0;
-    max-width: $containerWidth;    
+    max-width: $containerWidth;
     height: $containerHeight;
-   
+    animation: fadeIn 1s;
+
     .profileCard {
         margin: auto;
         padding: 15px;
@@ -83,7 +83,6 @@ body {
         padding: 8px 0;
         font-size: 28px;
         color: #000000;
-        
     }
     .profileCard,
     .devCard,
@@ -95,27 +94,30 @@ body {
         border-radius: $borderRadius;
         z-index: 3;
     }
-
     .devCard {
         z-index: 2;
         margin: 0 10px;
         border-radius: 0 0 $borderRadius $borderRadius;
         span {
-            padding: 5px 10px
+            padding: 5px 10px;
         }
+        animation: devCardMove 1.5s;
     }
     .contactCard {
         z-index: 1;
         margin: 0 20px;
         border-radius: 0 0 $borderRadius $borderRadius;
         span {
-            padding: 0px 10px
+            padding: 0px 10px;
+            transition: all 0.5s;
         }
         span:hover {
-           transform: scale(1.3);
-           transition: all 0.2s;
-           cursor: pointer;
+            transform: scale(1.35);
+            transition: all 0.5s;
+            cursor: pointer;
         }
+
+        animation: contactCardMove 2.5s;
     }
 }
 
@@ -127,13 +129,37 @@ body {
     margin: -9px 0;
 }
 
-.svg-icon path,
-.svg-icon polygon,
-.svg-icon rect {
+.svg-email {
     fill: #4691f6;
 }
 
-.svg-icon circle {
-    stroke: #4691f6;
-    stroke-width: 1;
+@keyframes devCardMove {
+    0% {
+         opacity: 0;
+        top: -100px;
+    }
+    100%{
+        opacity: 1;
+        top: 0px;
+    }
+}
+
+@keyframes contactCardMove {
+    0% {
+        opacity: 0;
+        top: -200px;
+    }
+    100%{
+        opacity: 1;
+        top: 0px;
+    }
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
