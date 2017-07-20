@@ -101,6 +101,22 @@
         }
     }
 
+    function updateZoomSize() {
+        var vpw = window.innerWidth;
+        if (vpw <= 520) {
+            document.body.style.zoom = `${vpw / 520 * 100}%`;
+        }
+        else {
+            document.body.style.zoom = "100%";
+        }
+    }
+
+    window.onresize = () => {
+        updateZoomSize();
+    };
+    
+    updateZoomSize();
+
 </script>
 
 </html>
