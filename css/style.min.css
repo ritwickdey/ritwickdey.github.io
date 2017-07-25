@@ -1,4 +1,229 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400");*{margin:0;padding:0;box-sizing:border-box}html{height:100%}body{height:100%;width:100%;font-family:'Roboto', sans-serif;background-color:#415a74}body,.profileCard,.contactCard,.devCard{display:flex;justify-content:center;align-items:center}body{min-width:510px;padding:0 10px}.container{padding-left:10px 0;max-width:510px;height:300px;animation:fadeIn 1s}.container .profileCard{margin:auto;padding:15px;background-color:#ECF0F1}.container .profileCard .profilePic{flex-direction:row;margin:auto}.container .profileCard .profilePic>img{border-radius:50%;height:110px;width:110px}.container .profileCard .profileDetails{padding-left:20px;color:#000;font-size:100%;font-weight:400}.container .profileCard .profileDetails .Name{font-size:35px;line-height:0.8}.container .profileCard .profileDetails .tagLine{font-size:18px;font-style:italic;line-height:1.8;color:#1E5DAD}.container .profileCard .profileDetails .bio{padding-top:5px;font-size:16px;line-height:1.2;font-weight:300}.container .devCard,.container .contactCard{background-color:#ECF0F1;padding:8px 0;font-size:28px;color:#000000}.container .profileCard,.container .devCard,.container .contactCard{box-shadow:5px 10px 20px rgba(0,0,0,0.4);position:relative}.container .profileCard{border-radius:7px;z-index:3}.container .devCard{z-index:2;margin:0 15px;border-radius:0 0 7px 7px;animation:devCardMove 1.5s}.container .devCard span{padding:5px 10px 0px 10px;margin-bottom:-5px}.container .contactCard{z-index:1;margin:0 30px;padding:0;border-radius:0 0 7px 7px;animation:contactCardMove 2.5s}.container .contactCard span{padding:1px 10px;transition:all 0.5s;margin-bottom:-5px}.container .contactCard span:hover{transform:scale(1.2);transition:all 0.5s;cursor:pointer}.svg-dev-icon{width:30px;height:30px}.svg-contact-icon{width:33px;height:33px}svg#email{width:45px;height:45px;fill:#4691f6}@keyframes devCardMove{0%{opacity:0;top:-100px}100%{opacity:1;top:0px}}@keyframes contactCardMove{0%{opacity:0;top:-200px}100%{opacity:1;top:0px}}@keyframes fadeIn{0%{opacity:0}100%{opacity:1}}
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+html, body {
+  overflow: hidden;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  background-color: #415a74;
+}
+
+.bodyContainer,
+.profileCard,
+.contactCard,
+.devCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bodyContainer {
+  height: 100vh;
+  min-width: 510px;
+  padding: 0 10px;
+}
+
+.container {
+  padding-left: 10px 0;
+  max-width: 510px;
+  height: 300px;
+  animation: fadeIn 1s;
+}
+
+.container .profileCard {
+  margin: auto;
+  padding: 15px;
+  background-color: #ECF0F1;
+}
+
+.container .profileCard .profilePic {
+  flex-direction: row;
+  margin: auto;
+}
+
+.container .profileCard .profilePic > img {
+  border-radius: 50%;
+  height: 110px;
+  width: 110px;
+}
+
+.container .profileCard .profileDetails {
+  padding-left: 20px;
+  color: #000;
+  font-size: 100%;
+  font-weight: 400;
+}
+
+.container .profileCard .profileDetails .Name {
+  font-size: 35px;
+  line-height: 0.8;
+}
+
+.container .profileCard .profileDetails .tagLine {
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.8;
+  color: #1E5DAD;
+}
+
+.container .profileCard .profileDetails .bio {
+  padding-top: 5px;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 300;
+}
+
+.container .devCard,
+.container .contactCard {
+  background-color: #ECF0F1;
+  padding: 8px 0;
+  font-size: 28px;
+  color: #000000;
+}
+
+.container .profileCard,
+.container .devCard,
+.container .contactCard {
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+
+.container .profileCard {
+  border-radius: 7px;
+  z-index: 3;
+}
+
+.container .devCard {
+  z-index: 2;
+  margin: 0 15px;
+  border-radius: 0 0 7px 7px;
+  animation: devCardMove 1.5s;
+}
+
+.container .devCard span {
+  padding: 5px 10px 0px 10px;
+  margin-bottom: -5px;
+}
+
+.container .contactCard {
+  z-index: 1;
+  margin: 0 30px;
+  padding: 0;
+  border-radius: 0 0 7px 7px;
+  animation: contactCardMove 2.5s;
+}
+
+.container .contactCard span {
+  padding: 1px 10px;
+  transition: all 0.5s;
+  margin-bottom: -5px;
+}
+
+.container .contactCard span:hover {
+  transform: scale(1.2);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.svg-dev-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.svg-contact-icon {
+  width: 33px;
+  height: 33px;
+}
+
+svg#email {
+  width: 45px;
+  height: 45px;
+  fill: #4691f6;
+}
+
+@keyframes devCardMove {
+  0% {
+    opacity: 0;
+    top: -100px;
+  }
+  100% {
+    opacity: 1;
+    top: 0px;
+  }
+}
+
+@keyframes contactCardMove {
+  0% {
+    opacity: 0;
+    top: -200px;
+  }
+  100% {
+    opacity: 1;
+    top: 0px;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.sticky-top-right {
+  display: block;
+  position: absolute;
+  transform: rotate(40deg);
+  left: auto;
+  top: 50px;
+  right: -200px;
+  width: 700px;
+  line-height: 50px;
+  z-index: 100;
+}
+
+.sticky-top-right a {
+  color: #fff;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.sticky-top-right .sticky-items {
+  margin: 5px 0px;
+  padding: 0;
+  text-align: center;
+  background-color: #16a085;
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+  transition: 0.3s;
+}
+
+.sticky-top-right .sticky-items:hover {
+  transform: scale(1.08);
+  transition: 0.3s;
+}
+
+@media (max-width: 890px) {
+  .sticky-top-right {
+    top: 20px;
+    right: -290px;
+  }
+}
  
 
 

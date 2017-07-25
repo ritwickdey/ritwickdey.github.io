@@ -1,0 +1,39 @@
+.sticky-top-right {
+    display: block;
+    position: absolute;
+    transform: rotate(40deg);
+    left: auto;
+    top: 50px;
+    right: -200px;
+    width: 700px;
+    line-height: 50px;
+    z-index: 100;
+    a {
+        color: #fff;
+        text-transform: capitalize;
+        text-decoration: none;
+    }
+    .sticky-items {
+        margin: 5px 0px;
+        padding: 0;
+        text-align: center;
+        background-color: #16a085;
+        text-align: center;
+        color: #fff;
+        font-size: 22px;
+        transition: 0.3s;
+    }
+
+    .sticky-items:hover{
+        transform: scale(1.08);
+        transition: 0.3s;
+       
+    }
+}
+
+@media(max-width: 890px) {
+    .sticky-top-right {
+        top: 20px;
+        right: -290px;
+    }
+}

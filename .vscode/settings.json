@@ -1,6 +1,6 @@
 {
     "liveSassCompile.settings.extensionName": ".min.css",
-    "liveSassCompile.settings.format": "compressed",
+    "liveSassCompile.settings.format": "expanded",
     
     "liveSassCompile.settings.savePath": "/css",
     "liveServer.settings.port": 5300,

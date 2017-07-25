@@ -3,6 +3,9 @@ $profilePicHeightWidth: 110px;
 $containerHeight: 300px;
 $containerWidth: 510px;
 $borderRadius: 7px;
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +15,9 @@ $borderRadius: 7px;
 html {
     height: 100%;
 }
+html, body{
+     overflow: hidden;
+}
 
 body {
     height: 100%;
@@ -20,7 +26,7 @@ body {
     background-color: #415a74;
 }
 
-body,
+.bodyContainer,
 .profileCard,
 .contactCard,
 .devCard {
@@ -29,7 +35,8 @@ body,
     align-items: center;
 }
 
-body {
+.bodyContainer {
+    height: 100vh;
     min-width: $containerWidth;
     padding: 0 10px;
 }
@@ -39,6 +46,7 @@ body {
     max-width: $containerWidth;
     height: $containerHeight;
     animation: fadeIn 1s;
+
     .profileCard {
         margin: auto;
         padding: 15px;
@@ -170,3 +178,11 @@ svg#email {
         opacity: 1;
     }
 }
+
+
+
+
+
+
+
+@import "sticky";
