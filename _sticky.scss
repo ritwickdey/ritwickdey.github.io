@@ -7,7 +7,7 @@
     right: -200px;
     width: 700px;
     line-height: 50px;
-    z-index: 100;
+    z-index: 50;
     a {
         color: #fff;
         text-transform: capitalize;
@@ -22,18 +22,27 @@
         color: #fff;
         font-size: 22px;
         transition: 0.3s;
+        border: 1.5px solid #fff;
+        box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.4);
     }
-
-    .sticky-items:hover{
+    .sticky-items:hover {
         transform: scale(1.08);
         transition: 0.3s;
-       
     }
 }
 
+
 @media(max-width: 890px) {
+    .sticky-top-right {
+        top: 25px;
+        right: -250px;
+    }
+}
+
+@media(max-width: 500px) {
     .sticky-top-right {
         top: 20px;
         right: -290px;
     }
 }
+
