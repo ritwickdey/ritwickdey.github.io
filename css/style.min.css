@@ -229,8 +229,8 @@ svg#email {
 
 @media (max-width: 500px) {
   .sticky-top-right {
-    top: 20px;
-    right: -290px;
+    top: 10px;
+    right: -280px;
   }
 }
  
