@@ -115,6 +115,7 @@ body {
         margin: 0 30px;
         padding: 0;
         border-radius: 0 0 $borderRadius $borderRadius;
+       
         span {
             padding: 1px 10px;
             transition: all 0.5s;
@@ -124,7 +125,7 @@ body {
             transform: scale(1.20);
             transition: all 0.5s;
             cursor: pointer;
-        }
+        }  
         animation: contactCardMove 2.5s;
     }
 }
@@ -140,10 +141,9 @@ body {
     height: 33px;
 }
 
-svg#email {
+.svg-email-icon {
     width: 45px;
     height: 45px;
-    fill: #4691f6;
 }
 
 

@@ -147,10 +147,9 @@ body {
   height: 33px;
 }
 
-svg#email {
+.svg-email-icon {
   width: 45px;
   height: 45px;
-  fill: #4691f6;
 }
 
 @keyframes devCardMove {
