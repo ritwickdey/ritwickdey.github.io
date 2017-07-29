@@ -69,6 +69,7 @@ body {
 .container .profileCard .profileDetails .Name {
   font-size: 35px;
   line-height: 0.8;
+  font-weight: 400;
 }
 
 .container .profileCard .profileDetails .tagLine {
@@ -76,6 +77,7 @@ body {
   font-style: italic;
   line-height: 1.8;
   color: #1E5DAD;
+  font-weight: 400;
 }
 
 .container .profileCard .profileDetails .bio {
