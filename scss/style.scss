@@ -111,21 +111,20 @@ body {
         }
     }
     .social {
-        display: block;
-        // padding: 1rem 0;
+        display: block; // padding: 1rem 0;
         .social-icon {
             display: inline-block;
             width: 33px;
             height: 33px;
+            margin: .2rem .3rem;
             img {
                 height: 100%;
                 width: 100%;
             }
         }
     }
-
     .ending {
-        padding-bottom: 10px; 
+        padding-bottom: 10px;
     }
 }
 
@@ -154,4 +153,8 @@ body {
     background-color: $color1;
     border-radius: 100rem;
     padding: 0.2rem 2rem;
+}
+
+.white-bg {
+    background-color: #ffffff;
 }

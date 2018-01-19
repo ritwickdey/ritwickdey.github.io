@@ -127,6 +127,7 @@ body {
   display: inline-block;
   width: 33px;
   height: 33px;
+  margin: .2rem .3rem;
 }
 
 .container .social .social-icon img {
@@ -166,5 +167,9 @@ body {
   background-color: #E74C3C;
   border-radius: 100rem;
   padding: 0.2rem 2rem;
+}
+
+.white-bg {
+  background-color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */
