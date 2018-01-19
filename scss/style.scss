@@ -1,0 +1,90 @@
+$bg-color : #17A598;
+$color1 : #E74C3C;
+$color2 : #2C3E50;
+$text-color : #ffffff;
+
+*,
+*::after,
+*::before
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: $bg-color;
+    color: $text-color;
+
+    .card {
+        background-color: $color2;
+        height: 90%;
+        width: 45rem;
+        text-align: center;
+        overflow-x: hidden;
+        position: relative;
+        z-index: 1;
+    }
+
+    .profile-logo {
+        height: 15rem;
+        width: 15rem;
+        margin-top: 10rem;
+        display: inline-block;
+        position: relative;
+        z-index: 5;
+        img {
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+            border: .5rem solid $color1;
+        }
+    }
+    
+    .strip {
+        background-color: $color1;
+        height: 16.2rem;
+        width: 150%;
+        margin-left: -5rem;
+        margin-top: -8rem;
+        transform: rotateZ(344deg);
+        z-index: -1;
+        position: absolute;
+    }
+
+    .short-details {
+        position: relative;
+        .tagLine {
+            display: block;
+            width: 100%;
+            font-size: 1.8rem;
+            font-weight: lighter;
+            font-style: italic;
+            padding: 0.5rem;
+        }
+        .quote {
+            display: inline-block;
+            font-size: 1.8rem;
+            font-weight: 400;
+            width: 65%;
+            padding: .5rem 2rem;
+            padding-bottom: 1rem;
+            line-height: 1.2;
+        }
+    }
+}
