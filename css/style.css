@@ -34,6 +34,8 @@ body {
   overflow-x: hidden;
   position: relative;
   z-index: 1;
+  user-select: none;
+  overflow: hidden;
 }
 
 .container .profile-logo {
@@ -84,5 +86,85 @@ body {
   padding: .5rem 2rem;
   padding-bottom: 1rem;
   line-height: 1.2;
+}
+
+.container .details {
+  margin-top: 6rem;
+}
+
+.container .details .name {
+  display: inline-block;
+  width: 60%;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.6;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.container .details .bio {
+  display: inline-block;
+  width: 70%;
+  font-size: 1.4rem;
+  margin: .4rem;
+  margin-bottom: 0.8rem;
+}
+
+.container .details .projects-link {
+  display: inline-block;
+  width: 15rem;
+  line-height: 2;
+  font-size: 1.4rem;
+  padding: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.container .social {
+  display: block;
+}
+
+.container .social .social-icon {
+  display: inline-block;
+  width: 33px;
+  height: 33px;
+}
+
+.container .social .social-icon img {
+  height: 100%;
+  width: 100%;
+}
+
+.container .ending {
+  padding-bottom: 10px;
+}
+
+.divider {
+  padding: 1rem;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.divider .stick {
+  display: block;
+  height: 2px;
+  background-color: #E74C3C;
+  margin: 2px 0;
+  width: 75%;
+  clear: both;
+}
+
+.divider .stick1 {
+  transform: translateX(1.5rem);
+}
+
+.divider .stick2 {
+  transform: translateX(-1.5rem);
+}
+
+.round-shape {
+  background-color: #E74C3C;
+  border-radius: 100rem;
+  padding: 0.2rem 2rem;
 }
 /*# sourceMappingURL=style.css.map */

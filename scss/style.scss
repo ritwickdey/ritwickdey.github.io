@@ -1,12 +1,10 @@
-$bg-color : #17A598;
-$color1 : #E74C3C;
-$color2 : #2C3E50;
-$text-color : #ffffff;
-
+$bg-color: #17A598;
+$color1: #E74C3C;
+$color2: #2C3E50;
+$text-color: #ffffff;
 *,
 *::after,
-*::before
-{
+*::before {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -30,7 +28,6 @@ body {
     justify-content: center;
     background-color: $bg-color;
     color: $text-color;
-
     .card {
         background-color: $color2;
         height: 90%;
@@ -39,8 +36,9 @@ body {
         overflow-x: hidden;
         position: relative;
         z-index: 1;
+        user-select: none;
+        overflow: hidden;
     }
-
     .profile-logo {
         height: 15rem;
         width: 15rem;
@@ -55,7 +53,6 @@ body {
             border: .5rem solid $color1;
         }
     }
-    
     .strip {
         background-color: $color1;
         height: 16.2rem;
@@ -66,7 +63,6 @@ body {
         z-index: -1;
         position: absolute;
     }
-
     .short-details {
         position: relative;
         .tagLine {
@@ -87,4 +83,75 @@ body {
             line-height: 1.2;
         }
     }
+    .details {
+        margin-top: 6rem;
+        .name {
+            display: inline-block;
+            width: 60%;
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: 1.6;
+            text-transform: uppercase;
+            letter-spacing: 0.2rem;
+        }
+        .bio {
+            display: inline-block;
+            width: 70%;
+            font-size: 1.4rem;
+            margin: .4rem;
+            margin-bottom: 0.8rem;
+        }
+        .projects-link {
+            display: inline-block;
+            width: 15rem;
+            line-height: 2;
+            font-size: 1.4rem;
+            padding: 0.5rem;
+            margin-top: 1.5rem;
+        }
+    }
+    .social {
+        display: block;
+        // padding: 1rem 0;
+        .social-icon {
+            display: inline-block;
+            width: 33px;
+            height: 33px;
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+
+    .ending {
+        padding-bottom: 10px; 
+    }
+}
+
+.divider {
+    padding: 1rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    .stick {
+        display: block;
+        height: 2px;
+        background-color: $color1;
+        margin: 2px 0;
+        width: 75%;
+        clear: both;
+    }
+    .stick1 {
+        transform: translateX(1.5rem);
+    }
+    .stick2 {
+        transform: translateX(-1.5rem);
+    }
+}
+
+.round-shape {
+    background-color: $color1;
+    border-radius: 100rem;
+    padding: 0.2rem 2rem;
 }
