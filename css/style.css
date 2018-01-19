@@ -36,6 +36,8 @@ body {
   z-index: 1;
   user-select: none;
   overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 12px 11px 14px 0px rgba(0, 0, 0, 0.36);
 }
 
 .container .profile-logo {
@@ -117,6 +119,8 @@ body {
   font-size: 1.4rem;
   padding: 0.5rem;
   margin-top: 1.5rem;
+  cursor: pointer;
+  box-shadow: 5px 6px 6px 0px rgba(0, 0, 0, 0.31);
 }
 
 .container .social {
@@ -133,6 +137,7 @@ body {
 .container .social .social-icon img {
   height: 100%;
   width: 100%;
+  border-radius: 50%;
 }
 
 .container .ending {
