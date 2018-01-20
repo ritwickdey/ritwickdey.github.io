@@ -88,8 +88,20 @@ body {
     }
     .details {
         margin-top: 6rem;
+        .nameBlock {
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                .divider>.stick1 {
+                    transform: translateX(-2rem) !important;
+                }
+                .divider>.stick2 {
+                    transform: translateX(2rem) !important;
+                }
+            }
+        }
         .name {
             display: inline-block;
+            position: relative;
             width: 60%;
             font-size: 2rem;
             font-weight: 400;
@@ -115,30 +127,25 @@ body {
             vertical-align: middle;
             transition: all 0.3s ease-in-out;
             box-shadow: 7px 5px 8px 0px rgba(0, 0, 0, 0.31);
-            
             span {
                 transform: translateX(0.7rem);
                 display: inline-block;
                 transition: all 0.3s ease-in-out;
             }
             &:hover {
-                
                 &::after {
                     transform: translateX(-0.4rem);
                     opacity: 1;
                 }
-
                 span {
                     transform: translateX(-0.4rem);
                 }
             }
-
             &:active {
                 transform: scale(0.8);
-                box-shadow: 4px 5px 5px 0px rgba(0, 0, 0, 0.31);            
+                box-shadow: 4px 5px 5px 0px rgba(0, 0, 0, 0.31);
             }
-
-            &::after{
+            &::after {
                 content: '\00bb';
                 font-weight: bold;
                 position: relative;
@@ -151,7 +158,6 @@ body {
                 transition: all 0.3s ease-in-out;
             }
         }
-
     }
     .social {
         display: block; // padding: 1rem 0;
@@ -178,8 +184,10 @@ body {
     display: flex;
     flex-flow: column;
     align-items: center;
+    position: relative;
     .stick {
-        display: block;
+        display: inline-block;
+        position: relative;
         height: 2px;
         background-color: $color1;
         margin: 2px 0;
@@ -188,9 +196,19 @@ body {
     }
     .stick1 {
         transform: translateX(1.5rem);
+        transition: all 0.3s ease-in-out;
     }
     .stick2 {
         transform: translateX(-1.5rem);
+        transition: all 0.3s ease-in-out;
+    }
+    &:hover {
+        .stick1 {
+            transform: translateX(-1.5rem) !important;
+        }
+        .stick2 {
+            transform: translateX(1.5rem) !important;
+        }
     }
 }
 

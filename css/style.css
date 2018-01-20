@@ -95,8 +95,21 @@ body {
   margin-top: 6rem;
 }
 
+.container .details .nameBlock {
+  transition: all 0.3s ease-in-out;
+}
+
+.container .details .nameBlock:hover .divider > .stick1 {
+  transform: translateX(-2rem) !important;
+}
+
+.container .details .nameBlock:hover .divider > .stick2 {
+  transform: translateX(2rem) !important;
+}
+
 .container .details .name {
   display: inline-block;
+  position: relative;
   width: 60%;
   font-size: 2rem;
   font-weight: 400;
@@ -186,10 +199,12 @@ body {
   display: flex;
   flex-flow: column;
   align-items: center;
+  position: relative;
 }
 
 .divider .stick {
-  display: block;
+  display: inline-block;
+  position: relative;
   height: 2px;
   background-color: #E74C3C;
   margin: 2px 0;
@@ -199,10 +214,20 @@ body {
 
 .divider .stick1 {
   transform: translateX(1.5rem);
+  transition: all 0.3s ease-in-out;
 }
 
 .divider .stick2 {
   transform: translateX(-1.5rem);
+  transition: all 0.3s ease-in-out;
+}
+
+.divider:hover .stick1 {
+  transform: translateX(-1.5rem) !important;
+}
+
+.divider:hover .stick2 {
+  transform: translateX(1.5rem) !important;
 }
 
 .round-shape {
