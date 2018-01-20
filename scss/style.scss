@@ -41,6 +41,7 @@ body {
         overflow: hidden;
         border-radius: 5px;
         box-shadow: 12px 11px 14px 0px rgba(0, 0, 0, 0.36);
+        transition: all 0.3s ease-in-out;
     }
     .profile-logo {
         height: 14rem;
@@ -65,6 +66,27 @@ body {
         transform: rotateZ(344deg);
         z-index: -1;
         position: absolute;
+        &::after {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            height: 100%;
+            width: 20%;
+            background-color: #ffffff;
+            opacity: 0;
+            top: 0;
+            left: 0;
+        }
+        &:hover::after {
+            opacity: 0;
+            animation: fadeLeftToRight 1s ease-in-out 0s 1 alternate;
+        }
+    }
+    .strip-block:hover {
+        .strip:after {
+            opacity: 0;
+            animation: fadeLeftToRight 1s ease-in-out 0s 1 alternate;
+        }
     }
     .short-details {
         position: relative;
@@ -294,5 +316,16 @@ body {
 @media(max-width: 170px) and (min-height:100px) {
     html {
         font-size: 1px;
+    }
+}
+
+@keyframes fadeLeftToRight {
+    0% {
+        opacity: 0;
+        left: -10%;
+    }
+    100% {
+        opacity: 1;
+        left: 120%;
     }
 }

@@ -58,16 +58,18 @@
             <div class="profile-logo">
                 <img src="/img/Profile-Pic-Ritwick-Dey.jpg" alt="">
             </div>
-            <div class="strip"></div>
-            <div class="short-details">
-                <h4 class="tagLine">
-                    Student | Developer | Contributor | Designer
-                </h4>
-                <blockquote class="quote">
-                    "I love to help others in the way of self-learning"
-                </blockquote>
+            <div class="strip-block">
+                <div class="strip"></div>
+                <div class="short-details">
+                    <h4 class="tagLine">
+                        Student | Developer | Contributor | Designer
+                    </h4>
+                    <blockquote class="quote">
+                        "I love to help others in the way of self-learning"
+                    </blockquote>
+                </div>
             </div>
-
+                
             <div class="details">
                 <div class="nameBlock">
                     <h1 class="round-shape name">
@@ -112,7 +114,11 @@
         </div>
     </div>
 
-
+    <script>
+        document.getElementsByClassName('short-details')[0].onmouseover = () => {
+            document.getElementsByClassName('strip')[0].classList.add('animateStrip');
+        };
+    </script>
 
 </body>
 
