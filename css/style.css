@@ -116,12 +116,47 @@ body {
 .container .details .projects-link {
   display: inline-block;
   width: 15rem;
-  line-height: 2;
+  line-height: 2.2;
   font-size: 1.4rem;
   padding: 0.5rem;
   margin-top: 1.5rem;
   cursor: pointer;
-  box-shadow: 5px 6px 6px 0px rgba(0, 0, 0, 0.31);
+  vertical-align: middle;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 7px 5px 8px 0px rgba(0, 0, 0, 0.31);
+}
+
+.container .details .projects-link span {
+  transform: translateX(0.7rem);
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+
+.container .details .projects-link:hover::after {
+  transform: translateX(-0.4rem);
+  opacity: 1;
+}
+
+.container .details .projects-link:hover span {
+  transform: translateX(-0.4rem);
+}
+
+.container .details .projects-link:active {
+  transform: scale(0.8);
+  box-shadow: 4px 5px 5px 0px rgba(0, 0, 0, 0.31);
+}
+
+.container .details .projects-link::after {
+  content: '\00bb';
+  font-weight: bold;
+  position: relative;
+  opacity: 0;
+  vertical-align: sub;
+  font-size: 2.7rem;
+  line-height: 0;
+  transform: translateX(25px);
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
 }
 
 .container .social {
