@@ -200,6 +200,10 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
+.container .details .projects-link:hover {
+  background-color: #DB381B;
+}
+
 .container .details .projects-link:hover::after {
   transform: translateX(-0.4rem);
   opacity: 1;
@@ -229,7 +233,9 @@ body {
 
 .container .social {
   display: block;
-  padding: 2rem 3rem;
+  padding: 3rem 3rem;
+  padding-top: 0;
+  margin-top: 0;
 }
 
 .container .social .social-icon {
@@ -243,10 +249,6 @@ body {
   height: 100%;
   width: 100%;
   border-radius: 50%;
-}
-
-.container .ending {
-  padding-bottom: 10px;
 }
 
 .divider {

@@ -53,7 +53,6 @@ body {
         z-index: 5;
         border-radius: 50%;
         perspective: 1500px;
-        
         img {
             position: relative;
             border: .8rem solid $color1;
@@ -79,7 +78,7 @@ body {
             z-index: 10;
             font-size: 2rem;
             transition: all 0.5s ease-in-out;
-            transform:  rotateY(180deg);
+            transform: rotateY(180deg);
             backface-visibility: hidden;
             perspective: 1500px;
         }
@@ -88,8 +87,8 @@ body {
                 transform: rotateY(180deg);
             }
         }
-        &:hover::after { 
-            transform:  rotateY(0deg);
+        &:hover::after {
+            transform: rotateY(0deg);
         }
     }
     .strip {
@@ -188,6 +187,7 @@ body {
                 transition: all 0.3s ease-in-out;
             }
             &:hover {
+                background-color: $color3;
                 &::after {
                     transform: translateX(-0.4rem);
                     opacity: 1;
@@ -216,7 +216,9 @@ body {
     }
     .social {
         display: block; // padding: 1rem 0;
-        padding: 2rem 3rem;
+        padding: 3rem 3rem;
+        padding-top: 0;
+        margin-top: 0;
         .social-icon {
             display: inline-block;
             width: 33px;
@@ -228,9 +230,6 @@ body {
                 border-radius: 50%;
             }
         }
-    }
-    .ending {
-        padding-bottom: 10px;
     }
 }
 
