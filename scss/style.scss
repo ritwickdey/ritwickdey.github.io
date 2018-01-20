@@ -165,7 +165,23 @@ body {
     background-color: #ffffff;
 }
 
-@media(max-width: 460px) {
+@media (max-height: 740px) and (min-width: 436px) {
+    html {
+        font-size: 8px;
+    }
+}
+@media (max-height: 660px) and (min-width: 436px) {
+    html {
+        font-size: 6px;
+    }
+    .container {
+        .details {
+            margin-top: 8rem;
+        }
+    }
+}
+
+@media(max-width: 460px) and (min-height:100px) {
     html {
         font-size: 8px;
     }
@@ -184,7 +200,7 @@ body {
     }
 }
 
-@media(max-width: 360px) {
+@media(max-width: 360px) and (min-height:100px) {
     html {
         font-size: 7px;
     }
@@ -195,14 +211,15 @@ body {
     }
 }
 
-@media(max-width: 270px) {
+@media(max-width: 270px) and (min-height:100px) {
     html {
         font-size: 5px;
     }
 }
 
-@media(max-width: 170px) {
+@media(max-width: 170px) and (min-height:100px) {
     html {
         font-size: 1px;
     }
 }
+
