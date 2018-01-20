@@ -39,14 +39,14 @@ body {
         user-select: none;
         overflow: hidden;
         border-radius: 5px;
-        box-shadow:  12px 11px 14px 0px rgba(0, 0, 0, 0.36);
+        box-shadow: 12px 11px 14px 0px rgba(0, 0, 0, 0.36);
     }
     .profile-logo {
-        height: 15rem;
-        width: 15rem;
+        height: 14rem;
+        width: 14rem;
         margin-top: 8rem;
         display: inline-block;
-        position: relative;        
+        position: relative;
         z-index: 5;
         img {
             height: 100%;
@@ -116,6 +116,7 @@ body {
     }
     .social {
         display: block; // padding: 1rem 0;
+        padding: 2rem 3rem;
         .social-icon {
             display: inline-block;
             width: 33px;
@@ -124,7 +125,7 @@ body {
             img {
                 height: 100%;
                 width: 100%;
-                border-radius:50%; 
+                border-radius: 50%;
             }
         }
     }
@@ -162,4 +163,46 @@ body {
 
 .white-bg {
     background-color: #ffffff;
+}
+
+@media(max-width: 460px) {
+    html {
+        font-size: 8px;
+    }
+    .container {
+        .card {
+            width: 90vw;
+        }
+        .profile-logo {
+            width: 14rem;
+            height: 14rem;
+            margin-top: 14rem;
+        }
+        .details {
+            margin-top: 10rem;
+        }
+    }
+}
+
+@media(max-width: 360px) {
+    html {
+        font-size: 7px;
+    }
+    .container {
+        .details {
+            margin-top: 7rem;
+        }
+    }
+}
+
+@media(max-width: 270px) {
+    html {
+        font-size: 5px;
+    }
+}
+
+@media(max-width: 170px) {
+    html {
+        font-size: 1px;
+    }
 }

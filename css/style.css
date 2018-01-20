@@ -41,8 +41,8 @@ body {
 }
 
 .container .profile-logo {
-  height: 15rem;
-  width: 15rem;
+  height: 14rem;
+  width: 14rem;
   margin-top: 8rem;
   display: inline-block;
   position: relative;
@@ -125,6 +125,7 @@ body {
 
 .container .social {
   display: block;
+  padding: 2rem 3rem;
 }
 
 .container .social .social-icon {
@@ -176,5 +177,43 @@ body {
 
 .white-bg {
   background-color: #ffffff;
+}
+
+@media (max-width: 460px) {
+  html {
+    font-size: 8px;
+  }
+  .container .card {
+    width: 90vw;
+  }
+  .container .profile-logo {
+    width: 14rem;
+    height: 14rem;
+    margin-top: 14rem;
+  }
+  .container .details {
+    margin-top: 10rem;
+  }
+}
+
+@media (max-width: 360px) {
+  html {
+    font-size: 7px;
+  }
+  .container .details {
+    margin-top: 7rem;
+  }
+}
+
+@media (max-width: 270px) {
+  html {
+    font-size: 5px;
+  }
+}
+
+@media (max-width: 170px) {
+  html {
+    font-size: 1px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
