@@ -49,13 +49,47 @@ body {
   display: inline-block;
   position: relative;
   z-index: 5;
+  border-radius: 50%;
+  perspective: 1500px;
 }
 
 .container .profile-logo img {
+  position: relative;
+  border: 0.8rem solid #E74C3C;
   height: 100%;
   width: 100%;
   border-radius: 50%;
-  border: 0.5rem solid #E74C3C;
+  backface-visibility: hidden;
+  transition: all 0.5s ease-in-out;
+  perspective: 1500px;
+}
+
+.container .profile-logo::after {
+  content: 'Ritwick Dey';
+  display: flex;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #DB381B;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  font-size: 2rem;
+  transition: all 0.5s ease-in-out;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  perspective: 1500px;
+}
+
+.container .profile-logo:hover img {
+  transform: rotateY(180deg);
+}
+
+.container .profile-logo:hover::after {
+  transform: rotateY(0deg);
 }
 
 .container .strip {

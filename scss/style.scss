@@ -1,6 +1,7 @@
 $bg-color: #17A598;
 $color1: #E74C3C;
 $color2: #2C3E50;
+$color3: #DB381B;
 $text-color: #ffffff;
 *,
 *::after,
@@ -50,11 +51,45 @@ body {
         display: inline-block;
         position: relative;
         z-index: 5;
+        border-radius: 50%;
+        perspective: 1500px;
+        
         img {
+            position: relative;
+            border: .8rem solid $color1;
             height: 100%;
             width: 100%;
             border-radius: 50%;
-            border: .5rem solid $color1;
+            backface-visibility: hidden;
+            transition: all 0.5s ease-in-out;
+            perspective: 1500px;
+        }
+        &::after {
+            content: 'Ritwick Dey';
+            display: flex;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: $color3;
+            top: 0px;
+            left: 0px;
+            z-index: 10;
+            font-size: 2rem;
+            transition: all 0.5s ease-in-out;
+            transform:  rotateY(180deg);
+            backface-visibility: hidden;
+            perspective: 1500px;
+        }
+        &:hover {
+            img {
+                transform: rotateY(180deg);
+            }
+        }
+        &:hover::after { 
+            transform:  rotateY(0deg);
         }
     }
     .strip {
