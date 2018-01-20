@@ -48,7 +48,7 @@ body {
     .profile-logo {
         height: 14rem;
         width: 14rem;
-        margin-top: 8rem;
+        margin-top: 6rem;
         display: inline-block;
         position: relative;
         z-index: 5;
@@ -173,7 +173,8 @@ body {
             line-height: 1.2;
             font-weight: lighter;
             margin-bottom: 0.8rem;
-            text-align: justify;
+            text-align: center;
+            word-spacing: 1px;
         }
         .projects-link {
             display: inline-block;
@@ -313,6 +314,9 @@ body {
     .container {
         .profile-logo {
             margin-top: 30px !important;
+        }
+        .details {
+            margin-top: 8rem !important;
         }
     }
 }
