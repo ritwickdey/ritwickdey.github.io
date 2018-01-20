@@ -30,7 +30,8 @@ body {
     color: $text-color;
     .card {
         background-color: $color2;
-        height: 90%;
+        height: auto;
+        max-height: 90%;
         width: 45rem;
         text-align: center;
         overflow-x: hidden;
@@ -177,6 +178,23 @@ body {
     .container {
         .details {
             margin-top: 8rem;
+        }
+    }
+}
+
+@media(max-height: 740px)
+{
+    .container {
+        .card {
+            overflow-y: auto;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        .profile-logo {
+            margin-top: 30px !important;
         }
     }
 }
