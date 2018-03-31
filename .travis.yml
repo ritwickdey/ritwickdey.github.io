@@ -1,0 +1,27 @@
+language: node_js
+
+node_js:
+   "8.6.0"
+
+cache:
+  directories:
+    - "node_modules"
+    - $(npm config get prefix)/
+
+install:
+  - npm i -g node-sass
+
+script:
+  - rm css/ -rf
+  - node-sass scss/ -o css/
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $github_token
+  local_dir: ./
+  email: ritwickdey@outlook.com
+  name: Ritwick Dey
+  target-branch: gh-pages
+  on:
+    branch: master
