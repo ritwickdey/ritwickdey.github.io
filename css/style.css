@@ -9,7 +9,7 @@
 
 html {
   font-size: 10px;
-  font-family: "Open Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -68,7 +68,7 @@ body {
 }
 
 .container .profile-logo::after {
-  content: "Ritwick Dey";
+  content: 'Ritwick Dey';
   display: flex;
   position: absolute;
   height: 100%;
@@ -109,7 +109,7 @@ body {
 }
 
 .container .strip::after {
-  content: "";
+  content: '';
   display: inline-block;
   position: absolute;
   height: 100%;
@@ -143,7 +143,7 @@ body {
 }
 
 .container .short-details .quote {
-  font-family: "Cormorant Garamond", serif;
+  font-family: 'Cormorant Garamond', serif;
   display: inline-block;
   font-size: 2rem;
   font-weight: 400;
@@ -235,7 +235,7 @@ body {
 }
 
 .container .details .projects-link::after {
-  content: "\00bb";
+  content: '\00bb';
   position: relative;
   opacity: 0;
   vertical-align: sub;
@@ -256,8 +256,8 @@ body {
 
 .container .social .social-icon {
   display: inline-block;
-  width: 34px;
-  height: 34px;
+  width: 3.4rem;
+  height: 3.4rem;
   margin: 0.2rem 0.5rem;
   background-color: #ffffff;
   transition: all 0.3s ease-in-out;
@@ -368,11 +368,19 @@ body {
   .container .details {
     margin-top: 7rem;
   }
+  .container .social .social-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
 }
 
 @media (max-width: 270px) and (min-height: 100px) {
   html {
     font-size: 5px;
+  }
+  .container .social .social-icon {
+    width: 1.4rem;
+    height: 1.4rem;
   }
 }
 

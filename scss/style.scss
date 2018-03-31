@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond|Open+Sans:300i,300");
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond|Open+Sans:300i,300');
 $bg-color: #17a598;
 $color1: #e74c3c;
 $color2: #2c3e50;
@@ -14,7 +14,7 @@ $text-color: #ffffff;
 
 html {
   font-size: 10px;
-  font-family: "Open Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -55,7 +55,7 @@ body {
     z-index: 5;
     border-radius: 50%;
     perspective: 1500px;
-    animation: dropin 1s ease-in-out 0.4s 1 normal both;    
+    animation: dropin 1s ease-in-out 0.4s 1 normal both;
     img {
       position: relative;
       border: 0.8rem solid $color1;
@@ -67,7 +67,7 @@ body {
       perspective: 1500px;
     }
     &::after {
-      content: "Ritwick Dey";
+      content: 'Ritwick Dey';
       display: flex;
       position: absolute;
       height: 100%;
@@ -103,10 +103,10 @@ body {
     margin-top: -8rem;
     transform: rotateZ(-16deg);
     z-index: -1;
-    position: absolute;  
-    animation: stripAnimation 1s ease-in-out 1.4s 1 normal both;    
+    position: absolute;
+    animation: stripAnimation 1s ease-in-out 1.4s 1 normal both;
     &::after {
-      content: "";
+      content: '';
       display: inline-block;
       position: absolute;
       height: 100%;
@@ -137,7 +137,7 @@ body {
       padding: 0.5rem;
     }
     .quote {
-      font-family: "Cormorant Garamond", serif;
+      font-family: 'Cormorant Garamond', serif;
       display: inline-block;
       font-size: 2rem;
       font-weight: 400;
@@ -150,8 +150,8 @@ body {
   .details {
     margin-top: 6rem;
     .nameBlock {
-        transition: all 0.3s ease-in-out;
-        animation: dropin 1s ease-in-out 0.6s 1 normal both;
+      transition: all 0.3s ease-in-out;
+      animation: dropin 1s ease-in-out 0.6s 1 normal both;
       &:hover {
         .divider > .stick1 {
           transform: translateX(-2rem) !important;
@@ -181,7 +181,7 @@ body {
       margin-bottom: 0.8rem;
       text-align: center;
       word-spacing: 1px;
-      animation: dropin 1s ease-in-out 0.8s 1 normal both;      
+      animation: dropin 1s ease-in-out 0.8s 1 normal both;
     }
     .projects-link {
       display: inline-block;
@@ -217,7 +217,7 @@ body {
         box-shadow: 4px 5px 5px 0px rgba(0, 0, 0, 0.31);
       }
       &::after {
-        content: "\00bb";
+        content: '\00bb';
         position: relative;
         opacity: 0;
         vertical-align: sub;
@@ -237,8 +237,8 @@ body {
     animation: dropin 1s ease-in-out 1.2s 1 normal both;
     .social-icon {
       display: inline-block;
-      width: 34px;
-      height: 34px;
+      width: 3.4rem;
+      height: 3.4rem;
       margin: 0.2rem 0.5rem;
       background-color: #ffffff;
       transition: all 0.3s ease-in-out;
@@ -355,12 +355,26 @@ body {
     .details {
       margin-top: 7rem;
     }
+    .social {
+      .social-icon {
+        width: 2.4rem;
+        height: 2.4rem;
+      }
+    }
   }
 }
 
 @media (max-width: 270px) and (min-height: 100px) {
   html {
     font-size: 5px;
+  }
+  .container {
+    .social {
+      .social-icon {
+        width: 1.4rem;
+        height: 1.4rem;
+      }
+    }
   }
 }
 
@@ -396,8 +410,8 @@ body {
   0% {
     transform: translateX(-10px) rotateZ(0deg);
     opacity: 0;
-}
-100% {
+  }
+  100% {
     transform: translateX(0px) rotateZ(-16deg);
     opacity: 1;
   }
