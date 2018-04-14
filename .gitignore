@@ -2,6 +2,7 @@
 
 # Custom
 /backup
+*.log
 
 # compiled output
 /dist
