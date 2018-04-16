@@ -1,0 +1,20 @@
+@import '../var';
+
+.protfolio-container {
+  min-height: 100vh;
+  min-width: 100vw;
+  position: relative;
+  background-color: $bg-color;
+}
+
+.protfolio-container::after {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  background-color: $color2;
+  transform: rotateZ(-14deg) scale(1.5);
+  top: -65%;
+  left: -25%;
+}

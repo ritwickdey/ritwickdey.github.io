@@ -7,11 +7,13 @@ import { AppComponent } from './app.component';
 
 import { environment } from '../environments/environment';
 import { ProfileCardComponent } from './profile-card/profile-card.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProfileCardComponent
+    ProfileCardComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,

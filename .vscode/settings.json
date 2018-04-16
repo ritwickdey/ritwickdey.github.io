@@ -1,0 +1,4 @@
+{
+  "prettier.eslintIntegration": true,
+  "liveServer.settings.root": "/dist"
+}
