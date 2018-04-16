@@ -8,12 +8,14 @@ import { AppComponent } from './app.component';
 import { environment } from '../environments/environment';
 import { ProfileCardComponent } from './profile-card/profile-card.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { DpLogoComponent } from './dp-logo/dp-logo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProfileCardComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    DpLogoComponent
   ],
   imports: [
     BrowserModule,
