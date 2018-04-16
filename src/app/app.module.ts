@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { RouterModule } from '@angular/router';
 
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { AppComponent } from './app.component';
@@ -19,9 +19,19 @@ import { DpLogoComponent } from './dp-logo/dp-logo.component';
   ],
   imports: [
     BrowserModule,
-    ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production })
+    RouterModule.forRoot(
+      [
+        { path: '', component: ProfileCardComponent, pathMatch: 'full' },
+        { path: 'portfolio', component: PortfolioComponent },
+        { path: '**', redirectTo: '/' }
+      ],
+      { useHash: true }
+    ),
+    ServiceWorkerModule.register('/ngsw-worker.js', {
+      enabled: environment.production
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
