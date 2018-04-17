@@ -1,5 +1,11 @@
 import { Router } from '@angular/router';
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  Output,
+  EventEmitter,
+  HostListener
+} from '@angular/core';
 
 @Component({
   selector: 'app-navigator',
@@ -19,7 +25,12 @@ export class NavigatorComponent implements OnInit {
 
   ngOnInit() {}
 
-  onBgClick(e: Event) {
+  @HostListener('document:keydown', ['$event'])
+  onKeydownHandler(event: KeyboardEvent) {
+    if (event.key === 'Escape') this.onBgClick();
+  }
+
+  onBgClick() {
     this.cancellation.emit();
   }
   onNavItemClick(e: Event, url: string) {

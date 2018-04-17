@@ -1,16 +1,14 @@
-<div class="navigator-container" (click)="onBgClick($event)">
+<div class="navigator-container" (click)="onBgClick()">
   <div class="navLinks">
     <div
       *ngFor="let nav of navLinks; let isEven = even"
       (click)="onNavItemClick($event, nav.url)"
       [ngStyle]="{transform: isEven ? 'translateX(10%)' : 'translateX(-10%)'}"
       class="navLink">
-      <a [routerLink]="nav.url">
-        <div
-          [ngStyle]="{transform: isEven ? 'translateX(-10%)' : 'translateX(10%)'}">
-          {{nav.displayName}}
-        </div>
-      </a>
+      <div
+        [ngStyle]="{transform: isEven ? 'translateX(-10%)' : 'translateX(10%)'}">
+        {{nav.displayName}}
+      </div>
     </div>
   </div>
 </div>
