@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-navigator',
@@ -11,7 +12,18 @@ export class NavigatorComponent implements OnInit {
     { displayName: 'About', url: '/about' },
     { displayName: 'Contact', url: '/contact' }
   ];
-  constructor() {}
+
+  @Output('cancellation') cancellation = new EventEmitter();
+
+  constructor(private router: Router) {}
 
   ngOnInit() {}
+
+  onBgClick(e: Event) {
+    this.cancellation.emit();
+  }
+  onNavItemClick(e: Event, url: string) {
+    e.stopPropagation();
+    this.router.navigateByUrl(url);
+  }
 }

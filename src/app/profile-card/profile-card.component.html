@@ -1,5 +1,4 @@
 <div class="container">
-  <app-navigator></app-navigator>
   <div class="card">
     <div class="strip-block">
       <div class="profile-logo">
@@ -30,9 +29,9 @@
         I love coding, new technologies & chocolates. I'm mostly interested in Full Stack Web Development.
         <br> I love to work with ASP.NET Core, Node.js, Angular & React.
       </p>
-      <a class="round-shape projects-link" [routerLink]="['/portfolio']">
+      <a class="round-shape projects-link" (click)="onExploreMeClick()">
         <span>
-          My Projects
+          Explore Me
         </span>
       </a>
     </div>

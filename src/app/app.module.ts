@@ -10,6 +10,7 @@ import { ProfileCardComponent } from './profile-card/profile-card.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { DpLogoComponent } from './dp-logo/dp-logo.component';
 import { NavigatorComponent } from './navigator/navigator.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -17,13 +18,14 @@ import { NavigatorComponent } from './navigator/navigator.component';
     ProfileCardComponent,
     PortfolioComponent,
     DpLogoComponent,
-    NavigatorComponent
+    NavigatorComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(
       [
-        { path: '', component: ProfileCardComponent, pathMatch: 'full' },
+        { path: '', component: ProfileComponent, pathMatch: 'full' },
         { path: 'portfolio', component: PortfolioComponent },
         { path: '**', redirectTo: '/' }
       ],
