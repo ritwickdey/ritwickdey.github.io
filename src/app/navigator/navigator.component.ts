@@ -6,11 +6,26 @@ import {
   EventEmitter,
   HostListener
 } from '@angular/core';
+import {
+  trigger,
+  transition,
+  style,
+  group,
+  query,
+  animate,
+  state
+} from '@angular/animations';
 
 @Component({
   selector: 'app-navigator',
   templateUrl: './navigator.component.html',
-  styleUrls: ['./navigator.component.scss']
+  styleUrls: ['./navigator.component.scss'],
+  animations: [
+    trigger('slideIn', [
+      state('void', style({ marginLeft: '50%', opacity: 0.1 })),
+      transition('void <=> *', animate('0.5s ease-in-out'))
+    ])
+  ]
 })
 export class NavigatorComponent implements OnInit {
   navLinks = [

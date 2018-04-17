@@ -23,7 +23,8 @@
 .navLink {
   padding: 2rem 0;
   margin: 1rem 0;
-  width: 60%;
+  width: 40%;
+  min-width: 500px;
   font-size: 2.4rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -32,18 +33,11 @@
   background: rgba(#f8f8f8, 0.5);
   cursor: pointer;
   border-radius: 0.5rem;
-  transform: translateY(100px);
 }
 
 .navLink > * {
   color: #fff;
   text-decoration: none;
-}
-
-@media (max-width: 900px) {
-  .navLink {
-    width: 95%;
-  }
 }
 
 @media (max-width: 640px) {
