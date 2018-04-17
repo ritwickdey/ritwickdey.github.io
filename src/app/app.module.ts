@@ -9,13 +9,15 @@ import { environment } from '../environments/environment';
 import { ProfileCardComponent } from './profile-card/profile-card.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { DpLogoComponent } from './dp-logo/dp-logo.component';
+import { NavigatorComponent } from './navigator/navigator.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProfileCardComponent,
     PortfolioComponent,
-    DpLogoComponent
+    DpLogoComponent,
+    NavigatorComponent
   ],
   imports: [
     BrowserModule,
