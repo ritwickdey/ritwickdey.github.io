@@ -1,7 +1,6 @@
 <div class="navigator-container" (click)="onBgClick()">
-  <div class="navLinks">
+  <div class="navLinks" @slideIn>
     <div
-      @slideIn
       *ngFor="let nav of navLinks; let isEven = even"
       (click)="onNavItemClick($event, nav.url)"
       [ngStyle]="{transform: isEven ? 'translateX(10%)' : 'translateX(-10%)'}"
