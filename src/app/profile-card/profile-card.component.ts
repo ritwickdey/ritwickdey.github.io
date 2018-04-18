@@ -7,9 +7,14 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class ProfileCardComponent implements OnInit {
   @Output() ExploreMe = new EventEmitter();
+  startTadaAnimation = false;
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    setInterval(() => {
+      this.startTadaAnimation = !this.startTadaAnimation;
+    }, 6000);
+  }
 
   onExploreMeClick() {
     this.ExploreMe.emit();

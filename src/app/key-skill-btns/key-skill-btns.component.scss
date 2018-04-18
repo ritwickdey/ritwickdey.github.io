@@ -3,6 +3,7 @@
 .key-skills {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin: 1rem auto;
 
   .key-skill {
@@ -23,7 +24,7 @@
     // $.key-skill
     &:hover {
       padding: 0.4rem 3.2rem;
-      margin: 0 2rem;
+      margin: 0.6rem 2rem;
     }
 
     &.key-skill--disabled {

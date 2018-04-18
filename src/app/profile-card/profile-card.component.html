@@ -29,11 +29,13 @@
         I love coding, new technologies & chocolates. I'm mostly interested in Full Stack Web Development.
         <br> I love to work with ASP.NET Core, Node.js, Angular & React.
       </p>
-      <a class="round-shape projects-link" (click)="onExploreMeClick()">
-        <span>
-          Explore Me
-        </span>
-      </a>
+      <div (mouseover)="startTadaAnimation = false" [ngClass]="{'tada-animation':startTadaAnimation}">
+        <a class="round-shape projects-link" (click)="onExploreMeClick()">
+          <span>
+            Explore Me
+          </span>
+        </a>
+      </div>
     </div>
     <div class="divider">
       <div class="stick stick1"></div>
