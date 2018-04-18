@@ -2,12 +2,13 @@
 
 .key-skills {
   display: flex;
+  flex-wrap: wrap;
   margin: 1rem auto;
 
   .key-skill {
     position: relative;
     font-size: 1.6rem;
-    margin: 0 0.8rem;
+    margin: 0.6rem;
     padding: 0.4rem 2rem;
     border: 2px solid $color3;
     border-radius: 50rem;
@@ -15,17 +16,21 @@
     color: #fff;
     line-height: 1.5;
     background-color: $color3;
-    transform: skew(52px);
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
     outline: none;
+    box-shadow: .4rem .5rem .9rem rgba(0, 0, 0, 0.25);
 
     // $.key-skill
+    &:hover {
+      padding: 0.4rem 3.2rem;
+      margin: 0 2rem;
+    }
 
     &.key-skill--disabled {
       border: 2px solid $color3;
       background-color: transparent;
       overflow: hidden;
-      transition: all 0.5s ease-in-out;
+      transition: all 0.3s ease-in-out;
     }
 
     &.key-skill--disabled:after {
@@ -38,7 +43,7 @@
       top: 50%;
       left: 0;
       transform: rotateZ(-14deg);
-      transition: all 0.5s ease-in-out;
+      transition: all 0.3s ease-in-out;
       // animation: slideIn 0.6s;
     }
   }

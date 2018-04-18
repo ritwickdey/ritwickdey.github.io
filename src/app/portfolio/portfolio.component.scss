@@ -19,7 +19,7 @@
   min-width: 500px;
   overflow: hidden;
   background-color: $color2;
-  transform: rotateZ(-14deg) scale(1.5);
+  transform: rotateZ(-11deg) scale(1.5);
   top: -65%;
   left: -25%;
 }
@@ -40,7 +40,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1.8rem;
 
     & > * {
       padding: 1rem 2rem;

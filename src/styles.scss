@@ -10,7 +10,7 @@
 }
 
 html {
-  font-size: 10px;
+  font-size: 62.5%;
   font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -19,4 +19,22 @@ body {
   height: 100vh;
   overflow-x: hidden;
   background-color: $bg-color;
+}
+
+@media (max-width: 460px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 360px)  {
+  html {
+    font-size: 7px;
+  }
+}
+
+@media (max-width: 270px)  {
+  html {
+    font-size: 5px;
+  }
 }
