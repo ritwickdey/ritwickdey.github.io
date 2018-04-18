@@ -5,6 +5,7 @@
   min-width: 100vw;
   position: relative;
   background-color: $bg-color;
+  overflow: hidden;
 }
 
 .protfolio-container::after {
@@ -13,6 +14,7 @@
   display: block;
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
   background-color: $color2;
   transform: rotateZ(-14deg) scale(1.5);
   top: -65%;

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond|Open+Sans:300i,300');
+@import './app/var';
 
 *,
 *::after,
@@ -17,4 +18,5 @@ body {
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
+  background-color: $bg-color;
 }

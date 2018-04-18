@@ -27,8 +27,8 @@ import { ProfileComponent } from './profile/profile.component';
     BrowserAnimationsModule,
     RouterModule.forRoot(
       [
-        { path: '', component: ProfileComponent, pathMatch: 'full' },
-        { path: 'portfolio', component: PortfolioComponent },
+        { path: '', component: ProfileComponent, pathMatch: 'full', data: { animation: 'home' } },
+        { path: 'portfolio', component: PortfolioComponent, data: { animation: 'portfolio' } },
         { path: '**', redirectTo: '/' }
       ],
       { useHash: true }

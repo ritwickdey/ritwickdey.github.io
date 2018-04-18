@@ -8,7 +8,7 @@ import { trigger, transition, query, animateChild } from '@angular/animations';
   animations: [
     trigger('animate', [
       transition('* => *', [
-        query(':leave, :enter', animateChild(), {
+        query(':leave, :enter', [animateChild()], {
           optional: true
         })
       ])
