@@ -12,6 +12,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { DpLogoComponent } from './dp-logo/dp-logo.component';
 import { NavigatorComponent } from './navigator/navigator.component';
 import { ProfileComponent } from './profile/profile.component';
+import { KeySkillBtnsComponent } from './key-skill-btns/key-skill-btns.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ProfileComponent } from './profile/profile.component';
     PortfolioComponent,
     DpLogoComponent,
     NavigatorComponent,
-    ProfileComponent
+    ProfileComponent,
+    KeySkillBtnsComponent
   ],
   imports: [
     BrowserModule,

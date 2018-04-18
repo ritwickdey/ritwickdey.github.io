@@ -1,0 +1,67 @@
+@import '../var';
+
+.key-skills {
+  display: flex;
+  margin: 1rem auto;
+
+  .key-skill {
+    position: relative;
+    font-size: 1.6rem;
+    margin: 0 0.8rem;
+    padding: 0.4rem 2rem;
+    border: 2px solid $color3;
+    border-radius: 50rem;
+    cursor: pointer;
+    color: #fff;
+    line-height: 1.5;
+    background-color: $color3;
+    transform: skew(52px);
+    transition: all 0.5s ease-in-out;
+    outline: none;
+
+    // $.key-skill
+
+    &.key-skill--disabled {
+      border: 2px solid $color3;
+      background-color: transparent;
+      overflow: hidden;
+      transition: all 0.5s ease-in-out;
+    }
+
+    &.key-skill--disabled:after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: $color3;
+      top: 50%;
+      left: 0;
+      transform: rotateZ(-14deg);
+      transition: all 0.5s ease-in-out;
+      // animation: slideIn 0.6s;
+    }
+  }
+}
+
+// @keyframes slideIn {
+//   0% {
+//     transform: translate(-50%);
+//     opacity: 0;
+//   }
+//   100% {
+//     transform: translate(0%);
+//     opacity: 1;
+//   }
+// }
+
+// @keyframes slideOut{
+//   0% {
+//     transform: translate(0%);
+//     opacity: 1;
+//   }
+//   100% {
+//     transform: translate(50%);
+//     opacity: 0;
+//   }
+// }
