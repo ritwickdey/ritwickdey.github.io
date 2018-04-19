@@ -1,13 +1,39 @@
 .project-container {
-  width: 65%;
+  width: 70%;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
 
   .project-card {
     padding: 1rem;
     flex-basis: 33.3%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .project-container {
+    width: 90%;
+    .project-card {
+      flex-basis: 33.3%;
+    }
+  }
+}
+
+@media (max-width: 970px) {
+  .project-container {
+    width: 95%;
+    .project-card {
+      flex-basis: 50%;
+    }
+  }
+}
+
+@media (max-width: 660px) {
+  .project-container {
+    width: 90%;
+    .project-card {
+      flex-basis: 100%;
+    }
   }
 }

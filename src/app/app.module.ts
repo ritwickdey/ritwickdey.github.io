@@ -15,6 +15,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { KeySkillBtnsComponent } from './key-skill-btns/key-skill-btns.component';
 import { ProjectCardComponent } from './project-card/project-card.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { ProjectDataService } from './services/project-data.service';
 
 @NgModule({
   declarations: [
@@ -33,8 +34,17 @@ import { ProjectsComponent } from './projects/projects.component';
     BrowserAnimationsModule,
     RouterModule.forRoot(
       [
-        { path: '', component: ProfileComponent, pathMatch: 'full', data: { animation: 'home' } },
-        { path: 'portfolio', component: PortfolioComponent, data: { animation: 'portfolio' } },
+        {
+          path: '',
+          component: ProfileComponent,
+          pathMatch: 'full',
+          data: { animation: 'home' }
+        },
+        {
+          path: 'portfolio',
+          component: PortfolioComponent,
+          data: { animation: 'portfolio' }
+        },
         { path: '**', redirectTo: '/' }
       ],
       { useHash: true }
@@ -43,7 +53,7 @@ import { ProjectsComponent } from './projects/projects.component';
       enabled: environment.production
     })
   ],
-  providers: [],
+  providers: [ProjectDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
