@@ -4,10 +4,12 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  transition: all 0.5s ease-in-out;
 
   .project-card {
     padding: 1rem;
     flex-basis: 33.3%;
+    transition: all 0.5s ease-in-out;
   }
 }
 

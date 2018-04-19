@@ -12,6 +12,8 @@ $min-width: 20rem;
   border-radius: 1rem;
   cursor: pointer;
   box-shadow: 6px 6px 15px rgba(#000000, 0.3);
+  // animation: slideIn 0.5s;
+  transition: all 0.5s ease-in-out;
 
   .card-container {
     display: flex;
@@ -34,5 +36,22 @@ $min-width: 20rem;
       font-size: 1.4rem;
       margin: 0.6rem 0;
     }
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@media(min-width:1000px) {
+  .card {
+    min-width: 32rem;
   }
 }
