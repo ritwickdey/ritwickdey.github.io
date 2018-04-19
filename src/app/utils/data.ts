@@ -8,6 +8,7 @@ const LiveServerProjectData: IProject = {
   projectLink: 'https://github.com/ritwickdey/lorem',
   liveUrl: 'https://ritwickdey.github.io/lorem',
   features: ['bla 1', 'bla 2', 'bla 3'],
+  tags: ['node.js'],
   additionalData: [
     {
       title: 'Lorem SubHeader',

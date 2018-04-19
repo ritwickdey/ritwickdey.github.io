@@ -5,5 +5,6 @@ export interface IProject {
   projectLink: string;
   liveUrl: string;
   features: string[];
+  tags: string[];
   additionalData: { title: string; data: string[] }[];
 }
