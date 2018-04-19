@@ -11,7 +11,7 @@
 
 .portfolio-bg::after {
   content: '';
-  position: absolute;
+  position: fixed;
   display: block;
   height: 100vh;
   min-height: 500px;
@@ -20,8 +20,8 @@
   overflow: hidden;
   background-color: $color2;
   transform: rotateZ(-11deg) scale(1.5);
-  top: -65%;
-  left: -25%;
+  top: -65vh;
+  left: -25vw;
 }
 
 .portfolio-container {

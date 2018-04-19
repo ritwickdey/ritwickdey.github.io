@@ -1,0 +1,13 @@
+.project-container {
+  width: 65%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  .project-card {
+    padding: 1rem;
+    flex-basis: 33.3%;
+  }
+}

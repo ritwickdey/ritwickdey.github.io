@@ -13,6 +13,8 @@ import { DpLogoComponent } from './dp-logo/dp-logo.component';
 import { NavigatorComponent } from './navigator/navigator.component';
 import { ProfileComponent } from './profile/profile.component';
 import { KeySkillBtnsComponent } from './key-skill-btns/key-skill-btns.component';
+import { ProjectCardComponent } from './project-card/project-card.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { KeySkillBtnsComponent } from './key-skill-btns/key-skill-btns.component
     DpLogoComponent,
     NavigatorComponent,
     ProfileComponent,
-    KeySkillBtnsComponent
+    KeySkillBtnsComponent,
+    ProjectCardComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,

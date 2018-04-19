@@ -1,0 +1,38 @@
+@import '../var';
+
+$min-height: 18rem;
+$min-width: 20rem;
+
+.card {
+  width: 100%;
+  min-width: $min-width;
+  min-height: $min-height;
+  height: 100%;
+  background: $off-white;
+  border-radius: 1rem;
+  cursor: pointer;
+  box-shadow: 6px 6px 15px rgba(#000000, 0.3);
+
+  .card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0.6rem 1.6rem;
+    width: 100%;
+    height: 100%;
+    color: $black;
+
+    .card-header {
+      width: 100%;
+      font-size: 2.4rem;
+      margin: 1rem 0;
+    }
+
+    .card-short-details {
+      width: 100%;
+      flex: 1;
+      font-size: 1.4rem;
+      margin: 0.6rem 0;
+    }
+  }
+}
