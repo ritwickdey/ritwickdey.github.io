@@ -1,3 +1,5 @@
+import { ITag } from './../utils/ITags';
+import { TagsService } from './../services/tags.service';
 import { Component, OnInit, EventEmitter } from '@angular/core';
 
 @Component({
@@ -6,22 +8,15 @@ import { Component, OnInit, EventEmitter } from '@angular/core';
   styleUrls: ['./key-skill-btns.component.scss']
 })
 export class KeySkillBtnsComponent implements OnInit {
-  keySkills = [
-    { displayName: 'Angular', isSelected: true },
-    { displayName: 'React.js', isSelected: true },
-    { displayName: 'Node.js', isSelected: true },
-    { displayName: 'ASP.NET', isSelected: true },
-    { displayName: 'Others', isSelected: !true }
-  ];
+  keySkills: ITag[];
 
-  constructor() {}
+  constructor(private tagsService: TagsService) {
+    this.keySkills = tagsService.tags;
+  }
 
   ngOnInit() {}
 
-  toogleSkillSelection(keySkill) {
-    const selectedSkill = this.keySkills.find(
-      e => e.displayName === keySkill.displayName
-    );
-    selectedSkill.isSelected = !selectedSkill.isSelected;
+  toogleSkillSelection(tag: ITag) {
+    this.tagsService.toogleTagSelection(tag.displayName);
   }
 }
