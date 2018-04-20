@@ -72,6 +72,7 @@ import { ProjectDataService } from './../services/project-data.service';
 export class ProjectsComponent implements OnInit, OnDestroy {
   projects: IProject[];
   tagSubscription$: EventEmitter<any>;
+  selectedProject: IProject;
 
   constructor(
     private tagsService: TagsService,
@@ -103,5 +104,7 @@ export class ProjectsComponent implements OnInit, OnDestroy {
             false
           )
       );
+
+    this.selectedProject = this.projects.length >= 0 ? this.projects[0] : null;
   }
 }

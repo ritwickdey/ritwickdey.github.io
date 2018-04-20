@@ -18,6 +18,7 @@ import { KeySkillBtnsComponent } from './key-skill-btns/key-skill-btns.component
 import { ProjectCardComponent } from './project-card/project-card.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ProjectDataService } from './services/project-data.service';
+import { ProjectDetailsComponent } from './project-details/project-details.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { ProjectDataService } from './services/project-data.service';
     ProfileComponent,
     KeySkillBtnsComponent,
     ProjectCardComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    ProjectDetailsComponent
   ],
   imports: [
     BrowserModule,

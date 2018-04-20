@@ -105,5 +105,10 @@ export const ALL_PROJECT_DATA: IProject[] = [
   LiveSassProjectData,
   CakeShopProjectData,
   OShopProjectData,
+  SocialDiaryProjectData,
+  LiveServerProjectData,
+  LiveSassProjectData,
+  CakeShopProjectData,
+  OShopProjectData,
   SocialDiaryProjectData
 ];

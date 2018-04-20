@@ -1,0 +1,75 @@
+@import '../var';
+
+.project-details-container {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: rgba(#000000, 0.4);
+  font-family: Helvetica, Arial, sans-serif;
+
+  .project-details {
+    height: 100vh;
+    width: 75vw;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    color: $black;
+    background-color: #f2f2f2;
+    padding: 1.6rem;
+  }
+
+  .project-content {
+    width: 80%;
+    margin: auto;
+    font-size: 1.8rem;
+    letter-spacing: 0.6px;
+
+    .poject-section {
+      margin: 2rem 0;
+    }
+
+    .project-title {
+      font-size: 3.2rem;
+      padding: 1.6rem;
+      text-align: center;
+      font-family: 'Cormorant Garamond', serif;
+    }
+
+    .project-description {
+      margin-bottom: 2rem;
+    }
+
+    .project-links {
+      padding: 1.6rem 0;
+      padding-bottom: 0.5rem;
+      p {
+        font-weight: bold;
+        padding: 0.6rem 0;
+        a {
+          font-weight: normal;
+          color: $green;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .project-features {
+      h4 {
+        font-weight: bold;
+        padding: 0.8rem 0;
+      }
+      .project-features-details {
+        padding-left: 3rem;
+        list-style-type: none;
+      }
+      .project-features-details>li::before {
+        content: '-';
+        padding-right: 0.8em;
+      }
+    }
+  }
+}
