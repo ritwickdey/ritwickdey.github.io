@@ -1,5 +1,8 @@
 <div class="project-details-container" enable-cancellation="true" (appEscCancelation)="onCancellation(null, true)" (click)="onCancellation($event)">
   <div class="project-details" @slideIn>
+    <div (click)="onCancellation(null, true)" class="cancellation-icon">
+      <app-cross-icon></app-cross-icon>
+    </div>
     <div class="project-content">
       <h4 class="poject-section project-title">{{project.name}}</h4>
       <p class="poject-section project-description">{{project.description}}</p>

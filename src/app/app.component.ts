@@ -20,7 +20,9 @@ import {
         query(':enter, :leave', style({ position: 'fixed', width: '100%' }), {
           optional: true
         }),
-        query(':enter', style({ transform: 'translateX(100%)', opacity: 0 })),
+        query(':enter', style({ transform: 'translateX(100%)', opacity: 0 }), {
+          optional: true
+        }),
         sequence([
           group([
             query('@*, :leave', [animateChild()], { optional: true }),

@@ -23,6 +23,16 @@
     z-index: 999;
   }
 
+  .cancellation-icon {
+    width: 3.5rem;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 2.5rem;
+    cursor: pointer;
+  }
+
   .project-content {
     width: 80%;
     margin: auto;
@@ -67,7 +77,7 @@
         padding-left: 3rem;
         list-style-type: none;
       }
-      .project-features-details>li::before {
+      .project-features-details > li::before {
         content: '-';
         padding-right: 0.8em;
       }

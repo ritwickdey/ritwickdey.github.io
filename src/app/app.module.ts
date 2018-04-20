@@ -20,6 +20,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ProjectDataService } from './services/project-data.service';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
 import { EscCancelationDirective } from './directives/esc-cancelation.directive';
+import { CrossIconComponent } from './ui/cross-icon/cross-icon.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { EscCancelationDirective } from './directives/esc-cancelation.directive'
     ProjectCardComponent,
     ProjectsComponent,
     ProjectDetailsComponent,
-    EscCancelationDirective
+    EscCancelationDirective,
+    CrossIconComponent
   ],
   imports: [
     BrowserModule,
@@ -62,7 +64,7 @@ import { EscCancelationDirective } from './directives/esc-cancelation.directive'
   providers: [
     ProjectDataService,
     TagsService,
-    {provide: APP_BASE_HREF, useValue: '!'}
+    { provide: APP_BASE_HREF, useValue: '!' }
   ],
   bootstrap: [AppComponent]
 })

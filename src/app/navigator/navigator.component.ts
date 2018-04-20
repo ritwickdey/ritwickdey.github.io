@@ -36,7 +36,7 @@ import {
           [
             stagger('0.3s', [
               animate(
-                '1s ease-out',
+                '0.7s ease-out',
                 keyframes([
                   style({ offset: 0 }),
                   style({ marginLeft: '0%', opacity: 0.8, offset: 0.8 }),
@@ -53,7 +53,7 @@ import {
           [
             stagger('0.3s', [
               animate(
-                '1s ease-in',
+                '0.7s ease-in',
                 keyframes([
                   style({ offset: 0 }),
                   style({ marginLeft: '10%', offset: 0.1 }),
