@@ -2,7 +2,7 @@ import { Component, OnInit, EventEmitter, OnDestroy } from '@angular/core';
 import {
   transition,
   trigger,
-  query as q,
+  query,
   animateChild,
   style,
   group,
@@ -11,8 +11,6 @@ import {
   stagger,
   keyframes
 } from '@angular/animations';
-
-const query = (s, a, o = { optional: true }) => q(s, a, o);
 
 import { IProject } from '../utils/IProject';
 import { TagsService } from './../services/tags.service';
@@ -92,6 +90,10 @@ export class ProjectsComponent implements OnInit, OnDestroy {
     if (this.tagSubscription$) this.tagSubscription$.unsubscribe();
   }
 
+  onProjectCardClick(data) {
+    this.selectedProject = data.project;
+  }
+
   renderProjects() {
     this.projects = this.projectService
       .getProjects()
@@ -104,7 +106,5 @@ export class ProjectsComponent implements OnInit, OnDestroy {
             false
           )
       );
-
-    this.selectedProject = this.projects.length >= 0 ? this.projects[0] : null;
   }
 }

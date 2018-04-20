@@ -1,7 +1,7 @@
 <div [@slideIn]="projects?.length" (@slideIn.done)="renderProjects()" class="project-container">
-  <app-project-card *ngFor="let project of projects" [project]="project" class="project-card">
+  <app-project-card *ngFor="let project of projects" [project]="project" (select)="onProjectCardClick($event)" class="project-card">
   </app-project-card>
 </div>
 <div>
-  <app-project-details [project]="selectedProject" *ngIf="selectedProject"></app-project-details>
+  <app-project-details [project]="selectedProject" (cancellation)="selectedProject = null" *ngIf="selectedProject"></app-project-details>
 </div>

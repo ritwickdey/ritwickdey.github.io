@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 
 import { IProject } from '../utils/IProject';
 
@@ -9,8 +9,16 @@ import { IProject } from '../utils/IProject';
 })
 export class ProjectDetailsComponent implements OnInit {
   @Input('project') project: IProject;
+  @Output('cancellation') cancellation = new EventEmitter();
 
   constructor() {}
 
   ngOnInit() {}
+
+  onCancellation(e) {
+    const cancelAttribute = e.target.attributes.getNamedItem(
+      'enable-cancellation'
+    );
+    if (cancelAttribute && cancelAttribute.value) this.cancellation.emit();
+  }
 }
