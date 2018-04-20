@@ -7,21 +7,32 @@
   background-color: $bg-color;
   overflow: hidden;
   display: flex;
-}
 
-.portfolio-bg::after {
-  content: '';
-  position: fixed;
-  display: block;
-  height: 100vh;
-  min-height: 500px;
-  width: 100vw;
-  min-width: 500px;
-  overflow: hidden;
-  background-color: $color2;
-  transform: rotateZ(-11deg) scale(1.5);
-  top: -65vh;
-  left: -25vw;
+  &::after {
+    content: '';
+    position: fixed;
+    display: block;
+    height: 100vh;
+    min-height: 500px;
+    width: 100vw;
+    min-width: 500px;
+    overflow: hidden;
+    background-color: $color2;
+    transform: rotateZ(-11deg) scale(1.5);
+    top: -65vh;
+    left: -25vw;
+  }
+
+  .back-icon {
+    width: 3.5rem;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 3.2rem;
+    cursor: pointer;
+    z-index: 100;
+  }
 }
 
 .portfolio-container {
@@ -60,7 +71,7 @@
       font-weight: normal;
       font-size: 3.2rem;
       letter-spacing: 1px;
-      margin: 1rem auto
+      margin: 1rem auto;
     }
   }
 }

@@ -21,6 +21,7 @@ import { ProjectDataService } from './services/project-data.service';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
 import { EscCancelationDirective } from './directives/esc-cancelation.directive';
 import { CrossIconComponent } from './ui/cross-icon/cross-icon.component';
+import { BackIconComponent } from './ui/back-icon/back-icon.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { CrossIconComponent } from './ui/cross-icon/cross-icon.component';
     ProjectsComponent,
     ProjectDetailsComponent,
     EscCancelationDirective,
-    CrossIconComponent
+    CrossIconComponent,
+    BackIconComponent
   ],
   imports: [
     BrowserModule,

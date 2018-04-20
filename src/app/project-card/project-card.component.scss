@@ -15,6 +15,7 @@ $min-width: 20rem;
   // animation: slideIn 0.5s;
   transition: all 0.5s ease-in-out;
 
+
   .card-container {
     display: flex;
     flex-direction: row;
@@ -50,7 +51,7 @@ $min-width: 20rem;
   }
 }
 
-@media(min-width:1080px) {
+@media (min-width: 1080px) {
   .card {
     min-width: 28rem;
   }
