@@ -2,6 +2,7 @@
   <button class="key-skill"
     *ngFor="let keySkill of keySkills"
     (click)="toogleSkillSelection(keySkill)"
+    [disabled]="disableIfOneBtn(keySkill)"
     [ngClass]="{'key-skill--disabled':!keySkill.isSelected}">
     {{keySkill.displayName}}
   </button>

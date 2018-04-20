@@ -19,4 +19,12 @@ export class KeySkillBtnsComponent implements OnInit {
   toogleSkillSelection(tag: ITag) {
     this.tagsService.toogleTagSelection(tag.displayName);
   }
+
+  disableIfOneBtn(keySkill: ITag) {
+    const targetKeySkills = this.keySkills.filter(e => e.isSelected);
+    return (
+      targetKeySkills.length === 1 &&
+      targetKeySkills[0].displayName === keySkill.displayName
+    );
+  }
 }

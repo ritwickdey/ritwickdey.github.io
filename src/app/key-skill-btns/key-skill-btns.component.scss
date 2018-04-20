@@ -20,7 +20,18 @@
     background-color: $color3;
     transition: all 0.3s ease-in-out;
     outline: none;
-    box-shadow: .4rem .5rem .9rem rgba(0, 0, 0, 0.25);
+    box-shadow: 0.4rem 0.5rem 0.9rem rgba(0, 0, 0, 0.25);
+
+    &:disabled {
+      background-color: lighten($color3, $amount: 10);
+      border: 2px solid lighten($color3, $amount: 10);
+      box-shadow: none;
+    }
+
+    &:hover:disabled {
+      margin: 0.6rem;
+      padding: 0.4rem 2rem;
+    }
 
     // $.key-skill
     &:hover {

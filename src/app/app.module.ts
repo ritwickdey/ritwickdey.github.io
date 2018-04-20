@@ -2,6 +2,7 @@ import { TagsService } from './services/tags.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { APP_BASE_HREF } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { ServiceWorkerModule } from '@angular/service-worker';
@@ -54,7 +55,11 @@ import { ProjectDataService } from './services/project-data.service';
       enabled: environment.production
     })
   ],
-  providers: [ProjectDataService, TagsService],
+  providers: [
+    ProjectDataService,
+    TagsService,
+    {provide: APP_BASE_HREF, useValue: '!'}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
