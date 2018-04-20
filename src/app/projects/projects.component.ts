@@ -64,6 +64,13 @@ import { ProjectDataService } from './../services/project-data.service';
           { optional: true }
         )
       ])
+    ]),
+
+    trigger('animateChildren', [
+      transition('* => *', [
+        query('@*, :enter', [animateChild()], { optional: true }),
+        query('@*, :leave', [animateChild()], { optional: true })
+      ])
     ])
   ]
 })
@@ -78,6 +85,7 @@ export class ProjectsComponent implements OnInit, OnDestroy {
   ) {}
 
   ngOnInit() {
+    // console.log('project component created');
     this.renderProjects();
     this.tagSubscription$ = this.tagsService.onTagUpdate;
     this.tagSubscription$.subscribe(() => {
@@ -87,7 +95,7 @@ export class ProjectsComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
-    if (this.tagSubscription$) this.tagSubscription$.unsubscribe();
+    // console.log('project component destroyed');
   }
 
   onProjectCardClick(data) {

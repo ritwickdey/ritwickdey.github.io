@@ -2,6 +2,6 @@
   <app-project-card *ngFor="let project of projects" [project]="project" (select)="onProjectCardClick($event)" class="project-card">
   </app-project-card>
 </div>
-<div>
+<div [@animateChildren]="selectedProject">
   <app-project-details [project]="selectedProject" (cancellation)="selectedProject = null" *ngIf="selectedProject"></app-project-details>
 </div>
