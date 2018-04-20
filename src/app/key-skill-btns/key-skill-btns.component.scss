@@ -6,12 +6,15 @@
   justify-content: center;
   margin: 1rem auto;
 
+  $key_skill_margin: 0.6rem;
+  $key_skill_padding: 0.4rem 2rem;
+
   .key-skill {
     z-index: 99;
     position: relative;
     font-size: 1.6rem;
-    margin: 0.6rem;
-    padding: 0.4rem 2rem;
+    margin: $key_skill_margin;
+    padding: $key_skill_padding;
     border: 2px solid $color3;
     border-radius: 50rem;
     cursor: pointer;
@@ -29,14 +32,19 @@
     }
 
     &:hover:disabled {
-      margin: 0.6rem;
-      padding: 0.4rem 2rem;
+      margin: $key_skill_margin;
+      padding: $key_skill_padding;
     }
 
     // $.key-skill
     &:hover {
       padding: 0.4rem 3.2rem;
       margin: 0.6rem 2rem;
+
+      @media screen and (max-width: 640px) {
+        margin: $key_skill_margin;
+        padding: $key_skill_padding;
+      }
     }
 
     &.key-skill--disabled {

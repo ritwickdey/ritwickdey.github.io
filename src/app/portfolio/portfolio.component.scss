@@ -31,7 +31,7 @@
     left: 0;
     margin: 3.2rem 5rem;
     cursor: pointer;
-    z-index: 100;
+    z-index: 11;
   }
 }
 
@@ -65,6 +65,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 100;
+    position: relative;
 
     & > h1 {
       font-family: 'Cormorant Garamond', serif;
@@ -73,6 +75,12 @@
       letter-spacing: 1px;
       margin: 1rem auto;
     }
+  }
+}
+
+@media (max-width: 900px) {
+  .portfolio-container {
+    padding: 3.5rem 0.5rem;
   }
 }
 

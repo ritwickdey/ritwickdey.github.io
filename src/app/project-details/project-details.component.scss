@@ -21,6 +21,10 @@
     background-color: #f2f2f2;
     padding: 1.6rem;
     z-index: 999;
+
+    @media (max-width: 640px) {
+      width: 95vw;
+    }
   }
 
   .cancellation-icon {
