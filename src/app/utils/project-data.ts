@@ -9,6 +9,7 @@ const LiveServerProjectData: IProject = {
   liveUrl: 'https://ritwickdey.github.io/lorem',
   features: ['bla 1', 'bla 2', 'bla 3'],
   tags: ['node.js'],
+  techStuff: ['Node.js', 'vscode-extension'],
   additionalData: [
     {
       title: 'Lorem SubHeader',
@@ -29,6 +30,7 @@ const LiveSassProjectData: IProject = {
   liveUrl: 'https://ritwickdey.github.io/lorem',
   features: ['bla 1', 'bla 2', 'bla 3'],
   tags: ['node.js'],
+  techStuff: ['Node.js', 'vscode-extension'],
   additionalData: [
     {
       title: 'Lorem SubHeader',
@@ -49,6 +51,7 @@ const CakeShopProjectData: IProject = {
   liveUrl: 'https://ritwickdey.github.io/lorem',
   features: ['bla 1', 'bla 2', 'bla 3'],
   tags: ['asp.net'],
+  techStuff: ['asp.net core', 'entity framework'],
   additionalData: [
     {
       title: 'Lorem SubHeader',
@@ -69,6 +72,7 @@ const OShopProjectData: IProject = {
   liveUrl: 'https://ritwickdey.github.io/lorem',
   features: ['bla 1', 'bla 2', 'bla 3'],
   tags: ['angular'],
+  techStuff: ['angular 4', 'firebase'],
   additionalData: [
     {
       title: 'Lorem SubHeader',
@@ -89,6 +93,7 @@ const SocialDiaryProjectData: IProject = {
   liveUrl: 'https://ritwickdey.github.io/lorem',
   features: ['bla 1', 'bla 2', 'bla 3'],
   tags: ['react.js'],
+  techStuff: ['react.js', 'redux'],
   additionalData: [
     {
       title: 'Lorem SubHeader',
@@ -105,7 +110,7 @@ export const ALL_PROJECT_DATA: IProject[] = [
   LiveSassProjectData,
   CakeShopProjectData,
   OShopProjectData,
-  SocialDiaryProjectData,
+  SocialDiaryProjectData
   // LiveServerProjectData,
   // LiveSassProjectData,
   // CakeShopProjectData,

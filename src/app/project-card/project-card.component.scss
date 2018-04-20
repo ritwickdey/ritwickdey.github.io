@@ -3,18 +3,45 @@
 $min-height: 18rem;
 $min-width: 20rem;
 
+.card-outer {
+  position: relative;
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+  color: #555;
+
+  &:hover {
+    .card__front {
+      transform: rotateY(180deg);
+    }
+    .card__back {
+      transform: rotateY(0deg);
+    }
+  }
+}
+
 .card {
   width: 100%;
   min-width: $min-width;
   min-height: $min-height;
-  height: 100%;
-  background: $off-white;
+  background: #fff;
   border-radius: 1rem;
   cursor: pointer;
   box-shadow: 6px 6px 15px rgba(#000000, 0.3);
-  // animation: slideIn 0.5s;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.8s ease-in-out;
+  perspective: 15000px;
+  backface-visibility: hidden;
 
+  &.card__front {
+    transform: rotateY(0deg);
+  }
+
+  &.card__back {
+    background: #eee;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg);
+  }
 
   .card-container {
     display: flex;
@@ -23,19 +50,49 @@ $min-width: 20rem;
     padding: 0.6rem 1.6rem;
     width: 100%;
     height: 100%;
-    color: $black;
 
     .card-header {
+      font-family: 'Cormorant Garamond', serif;
       width: 100%;
       font-size: 2.4rem;
       margin: 1rem 0;
+      font-weight: bold;
     }
 
     .card-short-details {
       width: 100%;
       flex: 1;
-      font-size: 1.4rem;
+      font-size: 1.6rem;
       margin: 0.6rem 0;
+    }
+
+    .tech-stuff-details {
+      & > span {
+        font-weight: bold;
+        display: inline-block;
+      }
+
+      & > p {
+        display: inline;
+        margin-left: 0.3rem;
+        word-break: break-word;
+      }
+    }
+
+    .full-width-btn {
+      display: block;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background: $color1;
+      padding: 0.8rem 0.3rem;
+      line-height: 2;
+      font-size: 1.6rem;
+      color: #fff;
+      border: 0;
+      outline: none;
+      cursor: pointer;
     }
   }
 }

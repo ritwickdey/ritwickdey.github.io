@@ -1,8 +1,22 @@
-<div class="card" (click)="onCardClick(project)">
-  <div class="card-container">
-    <h4 class="card-header">{{project.name}}</h4>
-    <p class="card-short-details">
-      {{project.description}}
-    </p>
+<div class="card-outer" (click)="onCardClick(project)">
+  <div class="card card__front">
+    <div class="card-container">
+      <h4 class="card-header">{{project.name}}</h4>
+      <p class="card-short-details">
+        {{project.description}}
+      </p>
+    </div>
+  </div>
+  <div class="card card__back">
+    <div class="card-container">
+      <h4 class="card-header">{{project.name}}</h4>
+      <div class="card-short-details">
+        <div class="tech-stuff-details">
+          <span>Tech Stuff: </span>
+          <p>{{project.techStuff.join(' , ')}}</p>
+        </div>
+        <button class="full-width-btn">More Details</button>
+      </div>
+    </div>
   </div>
 </div>
