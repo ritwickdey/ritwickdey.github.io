@@ -19,6 +19,7 @@ import { ProjectCardComponent } from './project-card/project-card.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ProjectDataService } from './services/project-data.service';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
+import { EscCancelationDirective } from './directives/esc-cancelation.directive';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ProjectDetailsComponent } from './project-details/project-details.compo
     KeySkillBtnsComponent,
     ProjectCardComponent,
     ProjectsComponent,
-    ProjectDetailsComponent
+    ProjectDetailsComponent,
+    EscCancelationDirective
   ],
   imports: [
     BrowserModule,

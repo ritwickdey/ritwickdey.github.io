@@ -15,10 +15,10 @@ export class ProjectDetailsComponent implements OnInit {
 
   ngOnInit() {}
 
-  onCancellation(e) {
-    const cancelAttribute = e.target.attributes.getNamedItem(
-      'enable-cancellation'
-    );
-    if (cancelAttribute && cancelAttribute.value) this.cancellation.emit();
+  onCancellation(e, force = false) {
+    const cancelAttribute =
+      force || e.target.attributes.getNamedItem('enable-cancellation');
+    if (force || (cancelAttribute && cancelAttribute.value))
+      this.cancellation.emit();
   }
 }

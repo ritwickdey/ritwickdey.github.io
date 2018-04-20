@@ -82,11 +82,6 @@ export class NavigatorComponent implements OnInit {
 
   ngOnInit() {}
 
-  @HostListener('document:keydown', ['$event'])
-  onKeydownHandler(event: KeyboardEvent) {
-    if (event.key === 'Escape') this.onBgClick();
-  }
-
   onBgClick() {
     this.cancellation.emit();
   }
