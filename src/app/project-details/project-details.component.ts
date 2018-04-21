@@ -1,4 +1,11 @@
-import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  Input,
+  EventEmitter,
+  Output,
+  Renderer2
+} from '@angular/core';
 import {
   stagger,
   keyframes,
@@ -62,14 +69,17 @@ export class ProjectDetailsComponent implements OnInit {
   @Input('project') project: IProject;
   @Output('cancellation') cancellation = new EventEmitter();
 
-  constructor() {}
+  constructor(private renderer: Renderer2) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.renderer.addClass(document.body, 'isSideDrawerOpen');
+  }
 
   onCancellation(e, force = false) {
     const cancelAttribute =
       force || e.target.attributes.getNamedItem('enable-cancellation');
     if (force || (cancelAttribute && cancelAttribute.value))
       this.cancellation.emit();
+    this.renderer.removeClass(document.body, 'isSideDrawerOpen');
   }
 }

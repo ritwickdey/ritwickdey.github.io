@@ -20,6 +20,11 @@ body {
   height: 100vh;
   overflow-x: hidden;
   background-color: $bg-color;
+
+  &.isSideDrawerOpen {
+    position: fixed;
+    overflow: hidden;
+  }
 }
 
 @media (max-width: 460px) {
