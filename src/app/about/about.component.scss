@@ -1,0 +1,13 @@
+@import '../var';
+
+.soon {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.4rem;
+  color: #fff;
+  background: $color2;
+  font-family: 'Cormorant Garamond', serif;
+}

@@ -22,6 +22,8 @@ import { ProjectDetailsComponent } from './project-details/project-details.compo
 import { EscCancelationDirective } from './directives/esc-cancelation.directive';
 import { CrossIconComponent } from './ui/cross-icon/cross-icon.component';
 import { BackIconComponent } from './ui/back-icon/back-icon.component';
+import { ContactComponent } from './contact/contact.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { BackIconComponent } from './ui/back-icon/back-icon.component';
     ProjectDetailsComponent,
     EscCancelationDirective,
     CrossIconComponent,
-    BackIconComponent
+    BackIconComponent,
+    ContactComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
@@ -54,6 +58,16 @@ import { BackIconComponent } from './ui/back-icon/back-icon.component';
           path: 'portfolio',
           component: PortfolioComponent,
           data: { animation: 'portfolio' }
+        },
+        {
+          path: 'about',
+          component: AboutComponent,
+          data: { animation: 'about' }
+        },
+        {
+          path: 'contact',
+          component: ContactComponent,
+          data: { animation: 'contact' }
         },
         { path: '**', redirectTo: '/' }
       ],

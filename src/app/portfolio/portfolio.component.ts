@@ -50,7 +50,12 @@ export class PortfolioComponent implements OnInit {
       portfolioArea.style.marginTop = `inherit`;
       this.setFixedPostion = false;
       const factor = window.scrollY / (thresoldHeight + 40);
-      const netFactor = this.prevScrollY < window.scrollY ? factor : 1 - factor;
+      const netFactor =
+        window.innerWidth < 900
+          ? 1
+          : this.prevScrollY < window.scrollY
+            ? factor
+            : 1 - factor;
       this.dpLogoStyle = {
         height: `${12 * netFactor}rem`,
         width: `${12 * netFactor}rem`,
