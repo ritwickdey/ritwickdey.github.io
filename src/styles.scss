@@ -11,18 +11,16 @@
 
 html {
   font-size: 62.5%;
-  overflow-x: hidden;
   font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
   width: 100vw;
-  height: 100vh;
+  // height: 100vh;
   overflow-x: hidden;
   background-color: $bg-color;
 
   &.isSideDrawerOpen {
-    position: fixed;
     overflow: hidden;
   }
 }

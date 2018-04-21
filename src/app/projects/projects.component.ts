@@ -32,9 +32,9 @@ import { ProjectDataService } from './../services/project-data.service';
         query(
           ':enter',
           [
-            stagger('0.2s', [
+            stagger('0.05s', [
               animate(
-                '0.3s ease-out',
+                '0.2s ease-out',
                 keyframes([
                   style({
                     transform: 'translateY(-25%)',
@@ -51,12 +51,12 @@ import { ProjectDataService } from './../services/project-data.service';
         query(
           ':leave',
           [
-            stagger('0.2s', [
+            stagger('0.05s', [
               animate(
-                '0.3s ease-in',
+                '0.2s ease-in',
                 keyframes([
                   style({ transform: 'translateY(0%)', offset: 0 }),
-                  style({ transform: 'translateY(25%)', opacity: 0, offset: 1 })
+                  style({ transform: 'translateY(-25%)', opacity: 0, offset: 1 })
                 ])
               )
             ])

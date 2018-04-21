@@ -26,6 +26,7 @@ $min-width: 20rem;
   background: #fff;
   border-radius: 1rem;
   cursor: pointer;
+  overflow: hidden;
   box-shadow: 6px 6px 15px rgba(#000000, 0.3);
   transition: all 0.8s ease-in-out;
   perspective: 15000px;
@@ -40,6 +41,7 @@ $min-width: 20rem;
     position: absolute;
     top: 0;
     left: 0;
+    z-index: -1;
     transform: rotateY(180deg);
   }
 
@@ -82,7 +84,7 @@ $min-width: 20rem;
     .full-width-btn {
       display: block;
       width: 100%;
-      position: absolute;
+      position: fixed;
       left: 0;
       bottom: 0;
       background: $color1;
@@ -93,6 +95,7 @@ $min-width: 20rem;
       border: 0;
       outline: none;
       cursor: pointer;
+      // backface-visibility: hidden;
     }
   }
 }

@@ -1,15 +1,21 @@
 <div class="portfolio-bg">
   <div class="portfolio-container">
-    <div class="back-icon" (click)="onBackBtnClick()">
-      <app-back-icon></app-back-icon>
-    </div>
-    <div class="portfolio-header">
-      <app-dp-logo height="12rem" width="12rem" borderWidth="3px"></app-dp-logo>
+    <div class="portfolio-header" #portfolioHeader>
+      <app-dp-logo
+        [height]="dpLogoStyle.height"
+        [width]="dpLogoStyle.width"
+        [borderWidth]="dpLogoStyle.borderWidth">
+      </app-dp-logo>
       <div>I love to work with ASP.NET Core, Node.js, Angular & React</div>
     </div>
-    <div class="portfolio-area">
-      <h1>PORTFOLIO</h1>
-      <app-key-skill-btns></app-key-skill-btns>
+    <div class="portfolio-area" #portfolioArea>
+      <div class="back-icon" (click)="onBackBtnClick()">
+        <app-back-icon></app-back-icon>
+      </div>
+      <div class="portfolio-selection" #portfolioSelectionArea [ngClass]="{'portfolio-selection__fixed': setFixedPostion }">
+        <h1>PORTFOLIO</h1>
+        <app-key-skill-btns></app-key-skill-btns>
+      </div>
       <app-projects></app-projects>
     </div>
   </div>

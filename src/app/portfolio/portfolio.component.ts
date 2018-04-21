@@ -1,5 +1,11 @@
+import {
+  Component,
+  OnInit,
+  HostListener,
+  ElementRef,
+  ViewChild
+} from '@angular/core';
 import { Router } from '@angular/router';
-import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-portfolio',
@@ -7,9 +13,54 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./portfolio.component.scss']
 })
 export class PortfolioComponent implements OnInit {
-  constructor(private router: Router) {}
+  @ViewChild('portfolioHeader') portfolioHeaderRef: ElementRef;
+  @ViewChild('portfolioArea') portfolioAreaRef: ElementRef;
+  @ViewChild('portfolioSelectionArea') portfolioSelectionAreaRef: ElementRef;
 
+  dpLogoStyle = {
+    height: '12rem',
+    width: '12rem',
+    borderWidth: '3px'
+  };
+
+  prevScrollY = 0;
+
+  setFixedPostion = false;
+
+  constructor(private router: Router) {}
   ngOnInit() {}
+
+  @HostListener('window:scroll')
+  onScroll() {
+    const portfolioHeader: HTMLElement = this.portfolioHeaderRef.nativeElement;
+    const portfolioArea: HTMLElement = this.portfolioAreaRef.nativeElement;
+    const portfolioSelectionArea: HTMLElement = this.portfolioSelectionAreaRef
+      .nativeElement;
+
+    const thresoldHeight =
+      portfolioHeader.scrollHeight + portfolioHeader.offsetTop;
+
+    const portfolioSelectionHeight =
+      portfolioSelectionArea.scrollHeight + portfolioSelectionArea.offsetTop;
+
+    if (window.scrollY > thresoldHeight) {
+      portfolioArea.style.marginTop = `${portfolioSelectionHeight}px`;
+      this.setFixedPostion = true;
+    } else {
+      portfolioArea.style.marginTop = `inherit`;
+      this.setFixedPostion = false;
+      const factor = window.scrollY / (thresoldHeight + 40);
+      const netFactor = this.prevScrollY < window.scrollY ? factor : 1 - factor;
+      this.dpLogoStyle = {
+        height: `${12 * netFactor}rem`,
+        width: `${12 * netFactor}rem`,
+        borderWidth: '3px'
+      };
+
+      this.prevScrollY = window.scrollY;
+    }
+  }
+
   onBackBtnClick() {
     this.router.navigateByUrl('/');
   }
