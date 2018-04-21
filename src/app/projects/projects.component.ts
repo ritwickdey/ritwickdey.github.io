@@ -110,7 +110,7 @@ export class ProjectsComponent implements OnInit, OnDestroy {
           .filter(tag => tag.isSelected)
           .reduce(
             (prev, tag) =>
-              prev || project.tags.includes(tag.displayName.toLowerCase()),
+              prev || project.tags.indexOf(tag.displayName.toLowerCase()) !== -1,
             false
           )
       );

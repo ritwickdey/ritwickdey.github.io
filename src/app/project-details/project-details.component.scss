@@ -10,49 +10,78 @@
   background-color: rgba(#000000, 0.4);
   font-family: Helvetica, Arial, sans-serif;
 
+  .poject-section {
+    margin: 2rem 0;
+  }
+
   .project-details {
     height: 100vh;
     width: 75vw;
-    position: absolute;
-    margin: auto;
+    position: relative;
+    margin-left: auto;
+    margin-right: 0;
     top: 0;
     right: 0;
     color: $black;
     background-color: #f2f2f2;
     padding: 1.6rem;
+    padding-top: 0;
+    padding-left: 0;
     z-index: 999;
+    overflow: hidden;
+    overflow-y: auto;
 
     @media (max-width: 640px) {
       width: 95vw;
     }
-  }
 
-  .cancellation-icon {
-    width: 3.5rem;
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 2.5rem;
-    cursor: pointer;
+    .project-details-header {
+      position: fixed;
+      // clear: both;
+      width: inherit;
+      background-color: inherit;
+      .project-title {
+        font-size: 3.2rem;
+        padding: 1.6rem;
+        text-align: center;
+        font-family: 'Cormorant Garamond', serif;
+        border-bottom: 1px solid $black;
+        // clear: both;
+
+        @media (max-width: 640px) {
+          text-align: left;
+        }
+      }
+      .cancellation-icon {
+        width: 3.5rem;
+        display: inline-block;
+        float: left;
+        // position: absolute;
+        top: 0;
+        left: 0;
+        margin: 3.5rem 2.5rem;
+        cursor: pointer;
+      }
+    }
+
+    .end-section {
+      font-family: 'Cormorant Garamond', serif;
+      width: inherit;
+      text-align: center;
+      font-weight: bold;
+      font-size: 2rem;
+      margin-top: 2rem;
+      padding: 1rem 0;
+      border-top: 1px solid $black;
+    }
   }
 
   .project-content {
     width: 80%;
     margin: auto;
+    margin-top: 12rem;
     font-size: 1.8rem;
     letter-spacing: 0.6px;
-
-    .poject-section {
-      margin: 2rem 0;
-    }
-
-    .project-title {
-      font-size: 3.2rem;
-      padding: 1.6rem;
-      text-align: center;
-      font-family: 'Cormorant Garamond', serif;
-    }
 
     .project-description {
       margin-bottom: 2rem;

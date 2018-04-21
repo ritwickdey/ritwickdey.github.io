@@ -17,6 +17,41 @@ const LiveServerProjectData: IProject = {
         'Lorem, ipsum dolor sit amet consectetur adipisicing elit.',
         'Nulla voluptates architecto totam? Exercitationem, odit sapiente.'
       ]
+    },
+    {
+      title: 'Lorem SubHeader',
+      data: [
+        'Lorem, ipsum dolor sit amet consectetur adipisicing elit.',
+        'Nulla voluptates architecto totam? Exercitationem, odit sapiente.'
+      ]
+    },
+    {
+      title: 'Lorem SubHeader',
+      data: [
+        'Lorem, ipsum dolor sit amet consectetur adipisicing elit.',
+        'Nulla voluptates architecto totam? Exercitationem, odit sapiente.'
+      ]
+    },
+    {
+      title: 'Lorem SubHeader',
+      data: [
+        'Lorem, ipsum dolor sit amet consectetur adipisicing elit.',
+        'Nulla voluptates architecto totam? Exercitationem, odit sapiente.'
+      ]
+    },
+    {
+      title: 'Lorem SubHeader',
+      data: [
+        'Lorem, ipsum dolor sit amet consectetur adipisicing elit.',
+        'Nulla voluptates architecto totam? Exercitationem, odit sapiente.'
+      ]
+    },
+    {
+      title: 'Lorem SubHeader',
+      data: [
+        'Lorem, ipsum dolor sit amet consectetur adipisicing elit.',
+        'Nulla voluptates architecto totam? Exercitationem, odit sapiente.'
+      ]
     }
   ]
 };
@@ -110,10 +145,17 @@ export const ALL_PROJECT_DATA: IProject[] = [
   LiveSassProjectData,
   CakeShopProjectData,
   OShopProjectData,
+  SocialDiaryProjectData,
+
+  LiveServerProjectData,
+  LiveSassProjectData,
+  CakeShopProjectData,
+  OShopProjectData,
+  SocialDiaryProjectData,
+
+  LiveServerProjectData,
+  LiveSassProjectData,
+  CakeShopProjectData,
+  OShopProjectData,
   SocialDiaryProjectData
-  // LiveServerProjectData,
-  // LiveSassProjectData,
-  // CakeShopProjectData,
-  // OShopProjectData,
-  // SocialDiaryProjectData
 ];
