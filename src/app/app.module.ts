@@ -52,7 +52,7 @@ import { AboutComponent } from './about/about.component';
           path: '',
           component: ProfileComponent,
           pathMatch: 'full',
-          data: { animation: 'home' }
+          data: { animation: 'profile' }
         },
         {
           path: 'portfolio',

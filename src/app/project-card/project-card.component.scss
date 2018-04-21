@@ -8,12 +8,15 @@ $min-width: 20rem;
   font-family: 'Lato', sans-serif;
   font-weight: normal;
   color: #555;
+  cursor: pointer;
 
   &:hover {
     .card__front {
+      cursor: pointer;
       transform: rotateY(180deg);
     }
     .card__back {
+      cursor: pointer;
       transform: rotateY(0deg);
     }
   }

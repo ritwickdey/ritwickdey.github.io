@@ -34,6 +34,7 @@
     &:hover:disabled {
       margin: $key_skill_margin;
       padding: $key_skill_padding;
+      cursor: not-allowed;
     }
 
     // $.key-skill
