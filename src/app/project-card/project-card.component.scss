@@ -27,11 +27,11 @@ $min-width: 20rem;
   min-width: $min-width;
   min-height: $min-height;
   background: #fff;
-  border-radius: 1rem;
+  border-radius: 0.6rem;
   cursor: pointer;
   overflow: hidden;
   box-shadow: 6px 6px 15px rgba(#000000, 0.3);
-  transition: all 0.8s ease-in-out;
+  transition: 0.8s ease-in-out;
   perspective: 15000px;
   backface-visibility: hidden;
 

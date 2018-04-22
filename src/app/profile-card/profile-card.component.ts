@@ -13,7 +13,7 @@ export class ProfileCardComponent implements OnInit {
   ngOnInit() {
     setInterval(() => {
       this.startTadaAnimation = !this.startTadaAnimation;
-    }, 6000);
+    }, 3000);
   }
 
   onExploreMeClick() {

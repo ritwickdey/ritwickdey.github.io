@@ -30,6 +30,7 @@
     z-index: 999;
     overflow: hidden;
     overflow-y: auto;
+    box-shadow: -5px 9px 20px rgba(#000000, 0.3);
 
     @media (max-width: 640px) {
       width: 95vw;
