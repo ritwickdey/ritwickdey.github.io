@@ -1,27 +1,27 @@
-# language: node_js
+language: node_js
 
-# node_js:
-#    "8.6.0"
+node_js:
+   "8.9.4"
 
-# cache:
-#   directories:
-#     - "node_modules"
-#     - $(npm config get prefix)/
+cache:
+  directories:
+    - node_modules
+  yarn: true
 
-# install:
-#   - npm i -g node-sass
+install:
+  - yarn install
 
-# script:
-#   - rm css/ -rf
-#   - node-sass scss/ -o css/
+script:
+ - yarn lint
+ - yarn build
 
-# deploy:
-#   provider: pages
-#   skip_cleanup: false
-#   github_token: $github_token
-#   local_dir: ./
-#   email: ritwickdey@outlook.com
-#   name: Ritwick Dey
-#   target-branch: gh-pages
-#   on:
-#     branch: master
+deploy:
+  provider: pages
+  skip_cleanup: false
+  github_token: $github_token
+  local_dir: dist
+  email: ritwickdey@outlook.com
+  name: Ritwick Dey
+  target-branch: master
+  on:
+    branch: development
