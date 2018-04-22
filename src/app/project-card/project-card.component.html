@@ -13,7 +13,7 @@
       <div class="card-short-details">
         <div class="tech-stuff-details">
           <span>Tech Stuff: </span>
-          <p>{{project.techStuff.join(' , ')}}</p>
+          <p>{{project.techStuff.join(' , ') | maxLength:100:true}}</p>
         </div>
         <button class="full-width-btn">More Details</button>
       </div>

@@ -24,6 +24,7 @@ import { CrossIconComponent } from './ui/cross-icon/cross-icon.component';
 import { BackIconComponent } from './ui/back-icon/back-icon.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
+import { MaxLengthPipe } from './pipes/max-length.pipe';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { AboutComponent } from './about/about.component';
     CrossIconComponent,
     BackIconComponent,
     ContactComponent,
-    AboutComponent
+    AboutComponent,
+    MaxLengthPipe
   ],
   imports: [
     BrowserModule,
