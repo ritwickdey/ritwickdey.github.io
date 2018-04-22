@@ -12,6 +12,11 @@
 
   .poject-section {
     margin: 2rem 0;
+
+    .project-section__header {
+      display: inline-block;
+      font-size: 2rem;
+    }
   }
 
   .project-details {
@@ -80,6 +85,7 @@
     width: 80%;
     margin: auto;
     margin-top: 12rem;
+    padding-top: 1.5rem;
     font-size: 1.8rem;
     letter-spacing: 0.6px;
 
@@ -90,7 +96,7 @@
     .project-links {
       padding: 1.6rem 0;
       padding-bottom: 0.5rem;
-      p {
+      .project-link {
         font-weight: bold;
         padding: 0.6rem 0;
         a {
@@ -109,10 +115,16 @@
       .project-features-details {
         padding-left: 3rem;
         list-style-type: none;
-      }
-      .project-features-details > li::before {
-        content: '-';
-        padding-right: 0.8em;
+
+        & > li {
+          line-height: 1;
+          line-height: 1.3;
+          padding: 0.4rem 0;
+        }
+        & > li::before {
+          content: '\27BA';
+          padding-right: 0.5em;
+        }
       }
     }
   }

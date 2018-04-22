@@ -9,18 +9,25 @@
     <div class="project-content">
       <p class="poject-section project-description">{{project.description}}</p>
       <div class="poject-section project-links">
-        <p *ngIf="project.projectLink">
-          <span>Project Link :</span>
+        <div class="project-link" *ngIf="project.projectLink">
+          <h4 class="project-section__header">Project Link:</h4>
           <a [href]="project.projectLink" target="_blank">{{project.projectLink}}</a>
-        </p>
-        <p *ngIf="project.liveUrl">
-          <span>Live Url :</span>
+        </div>
+        <div class="project-link" *ngIf="project.liveUrl">
+          <h4 class="project-section__header">Live Url:</h4>
           <a [href]="project.liveUrl" target="_blank">{{project.liveUrl}}</a>
-        </p>
+        </div>
+      </div>
+
+      <div *ngIf="project.techStuff && project.techStuff.length > 0" class="poject-section project-features">
+        <h4 class="project-section__header">Tech Stuff: </h4>
+        <ul class="project-features-details">
+          <li *ngFor="let tech of project.techStuff">{{tech}}</li>
+        </ul>
       </div>
 
       <div *ngIf="project.features && project.features.length > 0" class="poject-section project-features">
-        <h4>Features : </h4>
+        <h4 class="project-section__header">Features: </h4>
         <ul class="project-features-details">
           <li *ngFor="let features of project.features">{{features}}</li>
         </ul>
@@ -28,7 +35,7 @@
 
       <div *ngIf="project.additionalData">
         <div *ngFor="let ad of project.additionalData" class="poject-section project-features">
-          <h4>{{ad.title}}: </h4>
+          <h4 class="project-section__header">{{ad.title}}: </h4>
           <ul class="project-features-details">
             <li *ngFor="let _data of ad.data">{{ _data}}</li>
           </ul>
