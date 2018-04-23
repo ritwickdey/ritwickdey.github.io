@@ -74,13 +74,16 @@
     position: relative;
 
     .portfolio-selection {
+      background-color: $color2;
+
       &.portfolio-selection__fixed {
         position: fixed;
         top: 0;
         z-index: 1;
         background-color: $color2;
         width: 100%;
-        box-shadow: 0px 5px 20px rgba($color: #000, $alpha: 0.4);
+        box-shadow: 0px 8px 20px rgba($color: #000, $alpha: 0.4);
+        transition: all 0.3s ease-in-out;
       }
 
       & > h1 {

@@ -23,8 +23,6 @@ export class PortfolioComponent implements OnInit {
     borderWidth: '3px'
   };
 
-  prevScrollY = 0;
-
   setFixedPostion = false;
 
   constructor(private router: Router) {}
@@ -44,25 +42,18 @@ export class PortfolioComponent implements OnInit {
       portfolioSelectionArea.scrollHeight + portfolioSelectionArea.offsetTop;
 
     if (window.scrollY > thresoldHeight) {
-      portfolioArea.style.marginTop = `${portfolioSelectionHeight}px`;
+      portfolioArea.style.marginTop = `${portfolioSelectionHeight + 5}px`;
       this.setFixedPostion = true;
     } else {
       portfolioArea.style.marginTop = `inherit`;
       this.setFixedPostion = false;
-      const factor = window.scrollY / (thresoldHeight + 40);
-      const netFactor =
-        window.innerWidth < 900
-          ? 1
-          : this.prevScrollY < window.scrollY
-            ? factor
-            : 1 - factor;
+      const factor = 1 - window.scrollY / (thresoldHeight + 40);
+      // const netFactor = window.innerWidth < 900 ? 1 : 1 - factor;
       this.dpLogoStyle = {
-        height: `${12 * netFactor}rem`,
-        width: `${12 * netFactor}rem`,
-        borderWidth: '3px'
+        ...this.dpLogoStyle,
+        height: `${12 * factor}rem`,
+        width: `${12 * factor}rem`,
       };
-
-      this.prevScrollY = window.scrollY;
     }
   }
 
