@@ -17,7 +17,7 @@ script:
 
 deploy:
   provider: pages
-  skip_cleanup: false
+  skip_cleanup: true
   github_token: $github_token
   local_dir: dist
   email: ritwickdey@outlook.com
