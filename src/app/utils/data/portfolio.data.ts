@@ -8,7 +8,7 @@ export const portfoliloData: IProject = {
   projectLink: 'https://github.com/ritwickdey/ritwickdey.github.io',
   liveUrl: 'https://ritwickdey.github.io',
   features: [
-    'No 3rd party CSS library or component is used',
+    'No 3rd party CSS library or component is used 💖',
     'Filtering Project Cards in Portfolio Page',
     'Angular animation is used for various transition effects',
     'Reuseable Components & Responsive UI',
