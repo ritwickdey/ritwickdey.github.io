@@ -2,7 +2,7 @@ import { IProject } from '../IProject';
 
 export const portfoliloData: IProject = {
   id: 'C9D96DC3-C0FE-4EA4-9C53-06C9A8DF69B4',
-  name: 'Portfolio Website',
+  name: 'Portfolio Website 💘',
   description:
     'This is my portfolio website (SPA), designed with Adobe XD & developed with Angular 5',
   projectLink: 'https://github.com/ritwickdey/ritwickdey.github.io',

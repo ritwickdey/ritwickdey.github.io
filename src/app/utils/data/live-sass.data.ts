@@ -2,7 +2,7 @@ import { IProject } from '../IProject';
 
 export const LiveSassData: IProject = {
   id: '8108A2CA-4227-4704-99FF-E2250AE6C0D4',
-  name: 'Live Sass Compiler - VsCode Extension',
+  name: 'Live Sass Compiler - VsCode Extension 🚚',
   description:
     'Compile Sass or Scss file to CSS at realtime with live browser reload feature.',
   projectLink: 'https://github.com/ritwickdey/vscode-live-sass-compiler',

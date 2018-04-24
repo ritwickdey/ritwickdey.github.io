@@ -2,7 +2,7 @@ import { IProject } from '../IProject';
 
 export const liveServerData: IProject = {
   id: 'D861BC2A-E9F7-4CF1-8F9B-886C255E723C',
-  name: 'Live Server - VsCode Extension',
+  name: 'Live Server - VsCode Extension 💓',
   description: 'A development local Server with live reload feature.',
   projectLink: 'https://github.com/ritwickdey/vscode-live-server',
   liveUrl:

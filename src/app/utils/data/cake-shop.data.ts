@@ -2,7 +2,7 @@ import { IProject } from '../IProject';
 
 export const CakeShopData: IProject = {
   id: 'BD7972A2-197A-4236-841F-7D298A149726',
-  name: 'Cake Shop',
+  name: 'Cake Shop 🎂',
   description:
     'A sample Cake Shop Website built with ASP.NET Core (Multi-Page Application)',
   projectLink: 'https://github.com/ritwickdey/Cake-Shop',
