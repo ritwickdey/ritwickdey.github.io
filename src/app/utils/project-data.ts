@@ -15,11 +15,28 @@ import {} from './data/face-detector-chrome-api.data';
 import {} from './data/expensify.data';
 import {} from './data/create-files-folder-on-the-go.data';
 import { techFestData } from './data/college-tech-fest.data';
+import { testUniqueness } from './utils';
 
-export const ALL_PROJECT_DATA: IProject[] = [
-  liveServerData,
-  LiveSassData,
-  CakeShopData,
-  OShopData,
-  techFestData
-];
+const getAllProject = () => {
+  const projects = [
+    liveServerData,
+    LiveSassData,
+    CakeShopData,
+    OShopData,
+    techFestData
+  ];
+
+  const result = testUniqueness(projects, project => project.id);
+
+  if (result.error) {
+    const errorLog = [];
+    result.duplicates.forEach((project: IProject) => {
+      errorLog.push(`Duplicate E-id ${project.id} of ${project.name} `);
+    });
+    throw new Error(JSON.stringify(errorLog));
+  }
+
+  return projects;
+};
+
+export const ALL_PROJECT_DATA = getAllProject();

@@ -7,17 +7,14 @@ export const techFestData: IProject = {
   projectLink: 'https://github.com/ritwickdey/bgi-tech-fest-2k18',
   liveUrl: 'https://ritwickdey.github.io/bgi-tech-fest-2k18/',
   features: [
-    'Any heavy CSS library such as Bootstrap or Material CSS is NOT used',
-    'Responsive UI'
+    'No heavy CSS library such as `Bootstrap` or `Material-CSS` is used',
+    'Responsive UI',
+    'Parallax scrolling parallax'
   ],
   tags: ['html', 'css'],
   techStuff: [
-    'ASP.NET Core 2.0',
-    'Entity Framework Core',
-    'ASP.NET Identity',
-    'Razor View',
-    'AutoMapper',
-    'jQuery & Bootstap 4'
+    'HTML & CSS',
+    'jQuery'
   ],
   additionalData: []
 };

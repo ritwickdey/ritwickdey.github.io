@@ -1,7 +1,7 @@
 import { IProject } from '../IProject';
 
 export const OShopData: IProject = {
-  id: 'BD7972A2-197A-4236-841F-7D298A149726',
+  id: '5DF00C04-0DE4-4A56-B5F9-5E564BB8FF76',
   name: 'Organic Shop',
   description: 'A Shopping Website build with Angular 4 and Firebase',
   projectLink: 'https://github.com/ritwickdey/organic-shop',
