@@ -54,6 +54,7 @@ export class PortfolioComponent implements OnInit {
         height: `${12 * factor}rem`,
         width: `${12 * factor}rem`,
       };
+      portfolioHeader.style.opacity = factor.toString();
     }
   }
 

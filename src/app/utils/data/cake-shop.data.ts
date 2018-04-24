@@ -18,7 +18,7 @@ export const CakeShopData: IProject = {
     'Repository Pattern',
     'Application Architecture is decoupled form ORM (Entity Framework)'
   ],
-  tags: ['asp.net'],
+  tags: ['asp.net', 'asp.net core'],
   techStuff: [
     'ASP.NET Core 2.0',
     'Entity Framework Core',
@@ -27,13 +27,5 @@ export const CakeShopData: IProject = {
     'AutoMapper',
     'jQuery & Bootstap 4'
   ],
-  additionalData: [
-    // {
-    //   title: 'About',
-    //   data: [
-    //     'This extension is installed 70K times from marketplace (by 22.04.18)',
-    //     'Rating of this extension is 4.8 out of 5 (by 22.04.18)'
-    //   ]
-    // }
-  ]
+  additionalData: []
 };
