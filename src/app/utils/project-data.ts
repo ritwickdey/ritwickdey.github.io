@@ -6,7 +6,7 @@ import {} from './data/social-network.data';
 import {} from './data/we-mate.data';
 import {} from './data/social-diary.data';
 import {} from './data/sale-it.data';
-import {} from './data/portfolio.data';
+import { portfoliloData } from './data/portfolio.data';
 import { OShopData } from './data/oshop.data';
 import {} from './data/live-server-web-extension.data';
 import {} from './data/large-number-factorial.data';
@@ -23,7 +23,8 @@ const getAllProject = () => {
     LiveSassData,
     CakeShopData,
     OShopData,
-    techFestData
+    techFestData,
+    portfoliloData
   ];
 
   const result = testUniqueness(projects, project => project.id);
