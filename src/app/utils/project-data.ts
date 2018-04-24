@@ -1,4 +1,4 @@
-import { isDevMode } from '@angular/core';
+import { environment } from '../../environments/environment';
 
 import { IProject } from './IProject';
 import { testUniqueness } from './utils';
@@ -42,7 +42,7 @@ const getAllProject = () => {
     LargeNumberFactorialData,
   ];
 
-  if (isDevMode()) {
+  if (!environment.production) {
     const result = testUniqueness(projects, project => project.id);
 
     if (result.error) {
