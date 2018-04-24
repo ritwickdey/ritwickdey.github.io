@@ -1,15 +1,14 @@
-# My Portfolio Website :cupid:
+# My Portfolio Website :cupid: :sparkling_heart:
 
 This is my portfolio website (SPA), designed with Adobe XD & developed with Angular 5
 
 ## URl
 
-* [https://ritwickdey.github.io/ ](https://ritwickdey.github.io/) :cupid:
+* [https://ritwickdey.github.io/ ](https://ritwickdey.github.io/) :cupid::sparkling_heart:
 
 ## Tech Stuff
 - Angular 5 
-- Angular 
-- Animation 
+- Angular Animation 
 - CSS 
 - TypeScript
 
