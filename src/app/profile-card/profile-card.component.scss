@@ -1,31 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond|Open+Sans:300i,300');
-$bg-color: #17a598;
-$color1: #e74c3c;
-$color2: #2c3e50;
-$color3: #db381b;
-$text-color: #ffffff;
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  font-size: 10px;
-  font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-body {
-  width: 100vw;
-  height: 100vh;
-}
+@import '../var';
 
 .container {
   display: flex;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   align-items: center;
   justify-content: center;
   background-color: $bg-color;
@@ -49,7 +27,7 @@ body {
   .profile-logo {
     height: 14rem;
     width: 14rem;
-    margin-top: 6rem;
+    margin-top: 5.5rem;
     display: inline-block;
     position: relative;
     z-index: 5;
@@ -197,6 +175,7 @@ body {
       transition: all 0.3s ease-in-out;
       box-shadow: 7px 5px 8px 0px rgba(0, 0, 0, 0.31);
       animation: dropin 1s ease-in-out 1s 1 normal both;
+      // animation: tada 1s ease-in-out 0s infinite normal both;
       span {
         transform: translateX(0.7rem);
         display: inline-block;
@@ -204,6 +183,7 @@ body {
       }
       &:hover {
         background-color: $color3;
+        animation-play-state: paused;
         &::after {
           transform: translateX(0.2rem);
           opacity: 1;
@@ -290,6 +270,10 @@ body {
   background-color: $color1;
   border-radius: 100rem;
   padding: 0.2rem 2rem;
+}
+
+.tada-animation {
+  animation: tada 1s ease-in-out 0s 2 normal both;
 }
 
 @media (max-height: 740px) and (min-width: 436px) {
@@ -403,6 +387,42 @@ body {
   100% {
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+@keyframes tada {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  10% {
+    transform: scale(1.1) rotate(-4deg);
+  }
+  20% {
+    transform: scale(1.1) rotate(4deg);
+  }
+  30% {
+    transform: scale(1.1) rotate(-4deg);
+  }
+  40% {
+    transform: scale(1.1) rotate(4deg);
+  }
+  50% {
+    transform: scale(1.1) rotate(-4deg);
+  }
+  60% {
+    transform: scale(1.1) rotate(4deg);
+  }
+  70% {
+    transform: scale(1.1) rotate(-4deg);
+  }
+  80% {
+    transform: scale(1.1) rotate(4deg);
+  }
+  90% {
+    transform: scale(1.1) rotate(-4deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
   }
 }
 

@@ -1,11 +1,4 @@
 {
-    "liveSassCompile.settings.formats": [
-        {
-            "format": "expanded",
-            "extensionName": ".css",
-            "savePath": "/css"
-        }
-    ],
-    "liveServer.settings.port": 5300,
-    "liveServer.settings.root": "/"
+  "prettier.eslintIntegration": true,
+  "liveServer.settings.root": "/dist"
 }

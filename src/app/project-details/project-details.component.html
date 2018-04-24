@@ -1,0 +1,50 @@
+<div class="project-details-container" enable-cancellation="true" (appEscCancelation)="onCancellation(null, true)" (click)="onCancellation($event)">
+  <div class="project-details" @slideIn>
+    <div class="project-details-header">
+      <div (click)="onCancellation(null, true)" class="cancellation-icon">
+        <app-cross-icon></app-cross-icon>
+      </div>
+      <h4 class="poject-section project-title">{{project.name}}</h4>
+    </div>
+    <div class="project-content">
+      <p class="poject-section project-description">{{project.description}}</p>
+      <div class="poject-section project-links">
+        <div class="project-link" *ngIf="project.projectLink">
+          <h4 class="project-section__header">Project Link:</h4>
+          <a [href]="project.projectLink" target="_blank">{{project.projectLink}}</a>
+        </div>
+        <div class="project-link" *ngIf="project.liveUrl">
+          <h4 class="project-section__header">Live Url:</h4>
+          <a [href]="project.liveUrl" target="_blank">{{project.liveUrl}}</a>
+        </div>
+      </div>
+
+      <div *ngIf="project.techStuff && project.techStuff.length > 0" class="poject-section project-features">
+        <h4 class="project-section__header">Tech Stuff: </h4>
+        <ul class="project-features-details">
+          <li *ngFor="let tech of project.techStuff">{{tech}}</li>
+        </ul>
+      </div>
+
+      <div *ngIf="project.features && project.features.length > 0" class="poject-section project-features">
+        <h4 class="project-section__header">Features: </h4>
+        <ul class="project-features-details">
+          <li *ngFor="let features of project.features">{{features}}</li>
+        </ul>
+      </div>
+
+      <div *ngIf="project.additionalData">
+        <div *ngFor="let ad of project.additionalData" class="poject-section project-features">
+          <h4 class="project-section__header">{{ad.title}}: </h4>
+          <ul class="project-features-details">
+            <li *ngFor="let _data of ad.data">{{ _data}}</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    <div class="end-section">
+      :wq!
+    </div>
+  </div>
+</div>

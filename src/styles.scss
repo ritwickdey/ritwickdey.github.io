@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond|Open+Sans:300i,300|Lato');
+@import './app/var';
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  width: 100vw;
+  // height: 100vh;
+  overflow-x: hidden;
+  background-color: $bg-color;
+
+  &.isSideDrawerOpen {
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 460px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 360px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+@media (max-width: 270px) {
+  html {
+    font-size: 5px;
+  }
+}
+
+*::-webkit-scrollbar {
+  width: 0.5rem;
+  border-radius: 1rem;
+}
+
+*::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(#fff, 0.4);
+  outline: 1px solid slategrey;
+}
