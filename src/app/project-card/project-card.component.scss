@@ -48,6 +48,29 @@ $min-width: 20rem;
     transform: rotateY(180deg);
   }
 
+  &.card__featured {
+    &::before {
+      content: '\269D';
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      font-size: 1.6rem;
+      padding: 0 0.4rem;
+      color: #fff;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 3.2rem;
+      height: 3.2rem;
+      background-color: #327e36;
+      transform: rotateZ(45deg) translate(-88%) scale(2);
+    }
+  }
+
   .card-container {
     display: flex;
     flex-direction: row;

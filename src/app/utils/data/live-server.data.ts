@@ -5,6 +5,7 @@ export const liveServerData: IProject = {
   name: 'Live Server - VsCode Extension 💓',
   description: 'A development local Server with live reload feature.',
   projectLink: 'https://github.com/ritwickdey/vscode-live-server',
+  isFeatured: true,
   liveUrl:
     'https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer',
   features: [

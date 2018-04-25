@@ -4,6 +4,7 @@ export interface IProject {
   description: string;
   projectLink: string;
   liveUrl?: string;
+  isFeatured?: boolean;
   features?: string[];
   tags: string[];
   techStuff: string[];

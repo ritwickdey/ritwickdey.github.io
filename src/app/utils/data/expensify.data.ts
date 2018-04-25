@@ -6,6 +6,7 @@ export const ExpensifyData: IProject = {
   description:
     'An Private Expense Manager. This app is built with React with Redux architecture',
   projectLink: 'https://github.com/ritwickdey/expensify-app',
+  isFeatured: true,
   liveUrl: 'https://ritwickdey.github.io/expensify-app',
   features: [
     'Searching, Sorting, Filtering expenses',

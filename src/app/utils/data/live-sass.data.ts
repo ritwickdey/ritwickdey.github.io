@@ -6,6 +6,7 @@ export const LiveSassData: IProject = {
   description:
     'Compile Sass or Scss file to CSS at realtime with live browser reload feature.',
   projectLink: 'https://github.com/ritwickdey/vscode-live-sass-compiler',
+  isFeatured: true,
   liveUrl:
     'https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass',
   features: [

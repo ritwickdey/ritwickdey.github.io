@@ -5,6 +5,7 @@ export const OShopData: IProject = {
   name: 'Organic Shop 🍀',
   description: 'A Shopping Website build with Angular 4 and Firebase',
   projectLink: 'https://github.com/ritwickdey/organic-shop',
+  isFeatured: true,
   liveUrl: 'https://oshop-ritwick.firebaseapp.com/',
   features: [
     'Login through Facebook & Gmail',

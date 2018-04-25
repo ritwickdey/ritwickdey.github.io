@@ -5,6 +5,7 @@ export const portfoliloData: IProject = {
   name: 'Portfolio Website 💘',
   description:
     'This is my portfolio website (SPA), designed with Adobe XD & developed with Angular 5',
+  isFeatured: true,
   projectLink: 'https://github.com/ritwickdey/ritwickdey.github.io',
   liveUrl: 'https://ritwickdey.github.io',
   features: [

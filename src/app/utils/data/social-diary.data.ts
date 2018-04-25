@@ -5,6 +5,7 @@ export const SocialDiaryData: IProject = {
   name: 'Social Diary 📖',
   description: `A simple story app where people can share their story and can edit/delete
     only their stories and everyone can read all stories from timeline.`,
+  isFeatured: true,
   projectLink: 'https://github.com/ritwickdey/social-diary',
   liveUrl: 'https://ritwickdey.github.io/social-diary/',
   features: [

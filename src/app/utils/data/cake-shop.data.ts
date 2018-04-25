@@ -7,6 +7,7 @@ export const CakeShopData: IProject = {
     'A sample Cake Shop Website built with ASP.NET Core (Multi-Page Application)',
   projectLink: 'https://github.com/ritwickdey/Cake-Shop',
   liveUrl: null,
+  isFeatured: true,
   features: [
     'Only Admin can perform Create/Edit/Delete cakes & manage Orders.',
     'Normal User can only can buy cakes & view their orders.',
