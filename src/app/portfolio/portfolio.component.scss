@@ -57,6 +57,7 @@
     justify-content: center;
     align-items: center;
     font-size: 1.8rem;
+    user-select: none;
 
     & > * {
       padding: 1rem 2rem;
@@ -75,6 +76,7 @@
 
     .portfolio-selection {
       // background-color: $color2;
+      user-select: none;
 
       &.portfolio-selection__fixed {
         position: fixed;

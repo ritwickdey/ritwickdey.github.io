@@ -34,6 +34,7 @@ $min-width: 20rem;
   transition: 0.8s ease-in-out;
   perspective: 15000px;
   backface-visibility: hidden;
+  user-select: none;
 
   &.card__front {
     transform: rotateY(0deg);
