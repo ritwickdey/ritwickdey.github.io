@@ -62,7 +62,7 @@
         box-sizing: border-box;
       }
 
-      .html {
+      html {
         font-size: 10px;
       }
 
@@ -71,7 +71,7 @@
         overflow: hidden;
       }
 
-      .container {
+      .myLoader-container {
         display: flex;
         height: 100vh;
         width: 100vw;
@@ -79,35 +79,35 @@
         align-items: center;
       }
 
-      .loader-container {
-        height: 12em;
-        width: 12em;
+      .myLoader-loader-container {
+        height: 18em;
+        width: 18em;
         position: relative;
         display: block;
       }
 
-      .cicle-loader {
+      .myLoader-cicle-loader {
         position: absolute;
         height: 100%;
         width: 100%;
         top: 0;
         left: 0;
         display: inline-block;
-        border: 0.8em solid rgba(0, 0, 0, 0.1);
+        border: 1em solid rgba(256, 256, 256, 0.1);
         border-radius: 50%;
 
         animation: rotating 1.5s 1s infinite both;
       }
 
-      .cicle-loader::after {
+      .myLoader-cicle-loader::after {
         content: '';
         position: absolute;
         height: 100%;
         width: 100%;
-        top: -0.8em;
-        left: -0.8em;
+        top: -1em;
+        left: -1em;
         display: inline-block;
-        border: 0.8em solid transparent;
+        border: 1em solid transparent;
         border-top-color: #e74c3c;
         border-radius: 50%;
         box-sizing: content-box;
@@ -125,13 +125,11 @@
       }
     </style>
 
-    <div class="container">
-      <div class="loader-container">
-        <div class="cicle-loader"></div>
+    <div class="myLoader-container">
+      <div class="myLoader-loader-container">
+        <div class="myLoader-cicle-loader"></div>
       </div>
     </div>
-
-
 
   </app-root>
 </body>
