@@ -4,7 +4,7 @@
 .navigator-container {
   font-family: 'Cormorant Garamond', serif;
   display: flex;
-  position: absolute;
+  position: fixed;
   min-width: 100vw;
   min-height: 100vh;
   background: rgba(#555, 0.9);
