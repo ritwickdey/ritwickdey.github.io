@@ -1,0 +1,21 @@
+.text {
+  display: inline-block;
+}
+
+.cursor {
+  content: '|';
+  display: inline-block;
+}
+
+.cursor__animate {
+  animation: fadeInOut 0.8s cubic-bezier(1, -0.18, 0, 1.35) 0.5s infinite;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

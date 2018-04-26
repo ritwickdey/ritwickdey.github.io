@@ -25,6 +25,7 @@ import { BackIconComponent } from './ui/back-icon/back-icon.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { MaxLengthPipe } from './pipes/max-length.pipe';
+import { TypingComponent } from './typing/typing.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { MaxLengthPipe } from './pipes/max-length.pipe';
     BackIconComponent,
     ContactComponent,
     AboutComponent,
-    MaxLengthPipe
+    MaxLengthPipe,
+    TypingComponent
   ],
   imports: [
     BrowserModule,
