@@ -74,10 +74,10 @@ import { MaxLengthPipe } from './pipes/max-length.pipe';
         { path: '**', redirectTo: '/' }
       ],
       { useHash: true }
-    ),
-    ServiceWorkerModule.register('/ngsw-worker.js', {
-      enabled: environment.production
-    })
+    )
+    // ServiceWorkerModule.register('/ngsw-worker.js', {
+    //   enabled: environment.production
+    // })
   ],
   providers: [
     ProjectDataService,
