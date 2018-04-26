@@ -25,7 +25,8 @@ export class TypingComponent implements OnInit, OnChanges {
   ngOnInit() {}
 
   ngOnChanges(changes) {
-    this.startRendering();
+    this.displayText = '';
+    if (this.text) this.startRendering();
   }
 
   startRendering() {
