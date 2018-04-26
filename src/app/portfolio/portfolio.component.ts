@@ -18,7 +18,7 @@ export class PortfolioComponent implements OnInit {
   @ViewChild('portfolioArea') portfolioAreaRef: ElementRef;
   @ViewChild('portfolioSelectionArea') portfolioSelectionAreaRef: ElementRef;
 
-  animatedTypingText = '🙋 Hey, You can sort my projects by clicking below. ';
+  animatedTypingText = '🙋 Hey, You can sort my projects by clicking project category below. ';
 
   dpLogoStyle = {
     height: '12rem',
@@ -37,7 +37,8 @@ export class PortfolioComponent implements OnInit {
     let updateCount = 0;
     this.tagsService.onTagUpdate.subscribe(() => {
       if (updateCount === 0) {
-        this.animatedTypingText = 'Great! Thanks for trying out! 😊';
+        this.animatedTypingText =
+          'Great! Thanks for trying out! Have a great day! 😊';
         updateCount++;
       }
     });
