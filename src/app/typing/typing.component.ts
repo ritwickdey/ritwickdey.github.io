@@ -19,23 +19,26 @@ export class TypingComponent implements OnInit, OnChanges {
   @ViewChild('cursor') cursorRef: ElementRef;
 
   displayText = '';
+  isProcessRunning = false;
 
   constructor() {}
 
   ngOnInit() {}
 
   ngOnChanges(changes) {
-    this.displayText = '';
     if (this.text) this.startRendering();
   }
 
   startRendering() {
-    setTimeout(() => {
-      const eachTime = Math.round(this.time / this.text.length);
-      const textArr = this.text.split('');
-      console.log(eachTime);
-      this.renderTextByLetter(textArr, eachTime);
-    }, this.delay);
+    this.displayText = '';
+    if (!this.isProcessRunning) {
+      setTimeout(() => {
+        const eachTime = Math.round(this.time / this.text.length);
+        const textArr = this.text.split('');
+        this.renderTextByLetter(textArr, eachTime);
+      }, this.delay);
+    }
+    this.isProcessRunning = true;
   }
 
   renderTextByLetter(
@@ -46,6 +49,7 @@ export class TypingComponent implements OnInit, OnChanges {
     if (!textArr || textArr.length <= 0) {
       const cursor = this.cursorRef.nativeElement as HTMLSpanElement;
       cursor.classList.add('cursor__animate');
+      this.isProcessRunning = false;
       return;
     }
     setTimeout(() => {

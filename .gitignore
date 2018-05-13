@@ -3,6 +3,7 @@
 # Custom
 /backup
 *.log
+*.xd
 
 # compiled output
 /dist
