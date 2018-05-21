@@ -6,9 +6,9 @@ export const FaceDetectionData: IProject = {
   description: 'Face Detection using Google Chrome API',
   projectLink: 'https://github.com/ritwickdey/face-detector-chrome-api',
   liveUrl: 'https://ritwickdey.github.io/face-detector-chrome-api',
-  features: ['Factorial of Large Number Using C'],
+  features: ['Face Detection api of Google Chrome'],
   tags: ['others', 'chrome'],
-  techStuff: ['C Programming'],
+  techStuff: ['Chrome API'],
   additionalData: [
     {
       title: 'Note',
