@@ -5,8 +5,8 @@ export const SocialNetworkData: IProject = {
   name: 'Social Network 👦👧',
   description:
     'A chatting web app using MEAN Stack (Node.js, Angular 4, Express.js & MongoDB) ',
-  projectLink: 'https://github.com/ritwickdey/Sale-It',
-  liveUrl: 'https://ritwick-sale-it.azurewebsites.net',
+  projectLink: 'https://github.com/ritwickdey/social-network-mean-stack',
+  liveUrl: 'https://social-network-mean.herokuapp.com',
   features: ['A chatting web app using MEAN Stack', 'Colorful chat bars'],
   tags: ['node.js', 'angular', 'moongodb', 'express.js'],
   techStuff: [
