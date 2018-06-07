@@ -26,6 +26,7 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { MaxLengthPipe } from './pipes/max-length.pipe';
 import { TypingComponent } from './typing/typing.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { TypingComponent } from './typing/typing.component';
     ContactComponent,
     AboutComponent,
     MaxLengthPipe,
-    TypingComponent
+    TypingComponent,
+    LandingPageComponent
   ],
   imports: [
     BrowserModule,
@@ -54,9 +56,14 @@ import { TypingComponent } from './typing/typing.component';
       [
         {
           path: '',
-          component: ProfileComponent,
+          component: LandingPageComponent,
           pathMatch: 'full',
           data: { animation: 'profile' }
+        },
+        {
+          path: 'profile-card',
+          component: ProfileComponent,
+          data: { animation: 'profile-card' }
         },
         {
           path: 'portfolio',
