@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
@@ -8,7 +9,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 export class ProfileCardComponent implements OnInit {
   @Output() ExploreMe = new EventEmitter();
   startTadaAnimation = false;
-  constructor() {}
+  constructor(private router: Router) { }
 
   ngOnInit() {
     setInterval(() => {
@@ -18,5 +19,6 @@ export class ProfileCardComponent implements OnInit {
 
   onExploreMeClick() {
     this.ExploreMe.emit();
+    this.router.navigateByUrl('/');
   }
 }
