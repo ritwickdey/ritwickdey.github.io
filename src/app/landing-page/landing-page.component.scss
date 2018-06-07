@@ -20,7 +20,7 @@ $sm_break_point:560px;
   pointer-events: none;
   clip-path: ellipse(50vw 40vh at 50% 50%);
   transform: scale(2) translate(27vw, -18vh) rotate(335deg);
-  animation: 1s ease-in-out 0.2s both fadeLeftToRight;
+  animation: 1s ease-in-out 0.2s both leftToRight;
 }
 
 .dp-logo {
@@ -153,7 +153,6 @@ $sm_break_point:560px;
   animation: fadeIn 1s ease-in-out 1s both;
   box-shadow: 7px 5px 8px 0 rgba(0, 0, 0, .31);
   position: relative;
-  z-index: 5;
   span {
     position: relative;
     transform: translateX(0.7rem);
@@ -240,11 +239,11 @@ $sm_break_point:560px;
   animation: tada 1s ease-in-out 0s 2 normal both;
 }
 
-@keyframes fadeLeftToRight {
+@keyframes leftToRight {
   0% {
     display: relative;
     opacity: 0.1;
-    left: -10%;
+    left: -20%;
   }
   100% {
     display: relative;

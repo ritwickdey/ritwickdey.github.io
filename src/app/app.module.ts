@@ -1,7 +1,6 @@
 import { TagsService } from './services/tags.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
 import { APP_BASE_HREF } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -27,6 +26,7 @@ import { AboutComponent } from './about/about.component';
 import { MaxLengthPipe } from './pipes/max-length.pipe';
 import { TypingComponent } from './typing/typing.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { appRouting } from './app.routing';
 
 @NgModule({
   declarations: [
@@ -52,38 +52,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    RouterModule.forRoot(
-      [
-        {
-          path: '',
-          component: LandingPageComponent,
-          pathMatch: 'full',
-          data: { animation: 'profile' }
-        },
-        {
-          path: 'profile-card',
-          component: ProfileComponent,
-          data: { animation: 'profile-card' }
-        },
-        {
-          path: 'portfolio',
-          component: PortfolioComponent,
-          data: { animation: 'portfolio' }
-        },
-        {
-          path: 'about',
-          component: AboutComponent,
-          data: { animation: 'about' }
-        },
-        {
-          path: 'contact',
-          component: ContactComponent,
-          data: { animation: 'contact' }
-        },
-        { path: '**', redirectTo: '/' }
-      ],
-      { useHash: true }
-    )
+    appRouting
     // ServiceWorkerModule.register('/ngsw-worker.js', {
     //   enabled: environment.production
     // })
