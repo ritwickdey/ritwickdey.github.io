@@ -19,12 +19,25 @@
     <h4 class="short-bio">Student | Developer | Contributor</h4>
 
     <q class="quote">Help others in the way of self-learning</q>
-    <p class="name">RITWICK DEY</p>
-    <div class="strip"></div>
+    <div class="name">
+      <p>
+        RITWICK DEY
+      </p>
+      <div class="strip"></div>
+    </div>
 
-    <button class="special-btn">Explore Me</button>
+    <span
+      (click)="onExploreMeClick()"
+      (mouseover)="startTadaAnimation = false"
+      [ngClass]="{'tada-animation':startTadaAnimation}">
+      <button class="special-btn">
+        <span>
+          Explore Me
+        </span>
+      </button>
+    </span>
+
     <div class="stick">
-
       <div class="stick-design"></div>
     </div>
   </div>

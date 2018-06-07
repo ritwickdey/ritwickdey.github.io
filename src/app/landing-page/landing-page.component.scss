@@ -24,6 +24,7 @@ $sm_break_point:560px;
 }
 
 .dp-logo {
+  font-size: 2rem;
   animation: 1s ease-in-out 0.2s both fadeIn;
 }
 
@@ -88,7 +89,17 @@ $sm_break_point:560px;
   text-transform: uppercase;
   letter-spacing: 0.4rem;
   word-spacing: 0.2rem;
+  text-align: center;
+  margin-bottom: -2.5rem;
   animation: 1s ease-in-out 0.6s both fadeIn;
+  &:hover {
+    .strip::after {
+      left: -1rem;
+    }
+    .strip::before {
+      left: 1rem;
+    }
+  }
 }
 
 .strip {
@@ -96,8 +107,10 @@ $sm_break_point:560px;
   position: relative;
   width: 28rem;
   margin: auto;
+  margin-bottom: 2rem;
   animation: 1s ease-in-out 0.8s both fadeIn;
   &::before {
+    transition: 0.3s all ease-in-out;
     content: '';
     position: absolute;
     display: inline-block;
@@ -110,6 +123,7 @@ $sm_break_point:560px;
     left: -1rem;
   }
   &::after {
+    transition: 0.3s all ease-in-out;
     position: absolute;
     display: inline-block;
     content: '';
@@ -136,16 +150,51 @@ $sm_break_point:560px;
   border-radius: 100rem;
   cursor: pointer;
   transition: all .3s ease-in-out;
-  animation: 1s ease-in-out 1s both fadeIn;
+  animation: fadeIn 1s ease-in-out 1s both;
   box-shadow: 7px 5px 8px 0 rgba(0, 0, 0, .31);
   position: relative;
+  z-index: 5;
+  span {
+    position: relative;
+    transform: translateX(0.7rem);
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+  }
+  &:hover {
+    background-color: $color3;
+    animation-play-state: paused;
+    &::after {
+      transform: translateX(0.2rem);
+      opacity: 1;
+    }
+    span {
+      transform: translateX(-0.2rem);
+    }
+  }
+  &:active {
+    transform: scale(0.8);
+    box-shadow: 4px 5px 5px 0px rgba(0, 0, 0, 0.31);
+  }
+  &::after {
+    content: '\00bb';
+    position: relative;
+    opacity: 0;
+    vertical-align: sub;
+    font-size: 2.7rem;
+    line-height: 0;
+    transform: translateX(25px);
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+  }
 }
 
 .stick {
   flex: 1;
+  margin-top: -1rem;
   width: 100%;
   overflow: hidden;
   position: relative;
+  z-index: -1;
   animation: 1s ease-in-out 1s both fadeIn;
   &::after {
     content: '';
@@ -155,6 +204,7 @@ $sm_break_point:560px;
     position: absolute;
     background-color: $color1;
     left: 50%;
+    top: 0;
     z-index: 5;
     transform: translate(-50%);
     box-shadow: 7px 5px 8px 0 rgba(0, 0, 0, .31);
@@ -165,11 +215,12 @@ $sm_break_point:560px;
     position: absolute;
     left: 50%;
     min-width: 8.5rem;
-    top: 2.5rem;
+    top: 3.5rem;
     border-radius: 100rem;
     transform: translate(-50%);
     z-index: 6;
     box-shadow: 13px 0px 20px 0 rgba(0, 0, 0, 0.2);
+    transition: 1s all ease-in-out;
     &::after {
       content: '';
       height: 0.8rem;
@@ -183,6 +234,10 @@ $sm_break_point:560px;
       box-shadow: 2rem 0px 0px $color2, -2rem 0px 0px $color2;
     }
   }
+}
+
+.tada-animation {
+  animation: tada 1s ease-in-out 0s 2 normal both;
 }
 
 @keyframes fadeLeftToRight {
@@ -242,5 +297,16 @@ $sm_break_point:560px;
   }
   100% {
     transform: scale(1) rotate(0deg);
+  }
+}
+
+@keyframes stripAnimation {
+  0% {
+    transform: translateX(-10px) rotateZ(0deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px) rotateZ(-16deg);
+    opacity: 1;
   }
 }

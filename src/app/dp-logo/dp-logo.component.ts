@@ -1,7 +1,6 @@
 import {
   Component,
   OnInit,
-  Output,
   Input,
   OnChanges,
   SimpleChanges
@@ -18,7 +17,7 @@ export class DpLogoComponent implements OnInit, OnChanges {
   @Input('height') height: string;
   @Input('width') width: string;
   @Input('borderWidth') borderWidth: string;
-  constructor() {}
+  constructor() { }
 
   ngOnInit() {
     this.logoStyles = {
