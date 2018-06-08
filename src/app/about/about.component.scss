@@ -1,13 +1,54 @@
 @import '../var';
 
-.soon {
+$text-card-shift:45%;
+
+.overlay {
+  display: inline-block;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: -50%;
+  position: fixed;
+  background: $color2;
+  transform: skew(-30deg);
+  z-index: -1;
+}
+
+.container {
+  font-size: 1.4rem;
   height: 100vh;
   width: 100vw;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  color: #f2f2f2;
   align-items: center;
-  font-size: 2.4rem;
-  color: #fff;
-  background: $color2;
-  font-family: 'Cormorant Garamond', serif;
+
+  @media (max-width:1040px) {
+    flex-direction: column;
+  }
+  .side1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(0%, -$text-card-shift/2);
+  }
+  .side2 {
+    flex: 1
+  }
+}
+
+.text-container {
+  height: auto;
+  max-width: 32rem;
+  background: #e74c3c;
+  padding: 3rem 1.8rem;
+  padding-top: 6.5rem;
+  border-radius: 2rem;
+  min-width: 34rem;
+}
+
+.dp-logo {
+  font-size: 1.6rem;
+  transform: translate(0%, $text-card-shift);
 }
