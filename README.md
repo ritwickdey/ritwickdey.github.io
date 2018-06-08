@@ -2,14 +2,14 @@
 
 [![Build Status](https://travis-ci.org/ritwickdey/ritwickdey.github.io.svg?branch=development)](https://travis-ci.org/ritwickdey/ritwickdey.github.io)
 
-This is my portfolio website (SPA), designed with Adobe XD & developed with Angular 5.
+This is my portfolio website (SPA), designed with Adobe XD & developed with Angular.
 
 ## URl
 
 * [https://ritwickdey.github.io/ ](https://ritwickdey.github.io/) :cupid::sparkling_heart:
 
 ## Tech Stuff
-- Angular 5 
+- Angular 
 - Angular Animation 
 - CSS 
 - TypeScript
