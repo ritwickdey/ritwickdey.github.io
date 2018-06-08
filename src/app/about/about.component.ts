@@ -1,3 +1,5 @@
+import { ISkill } from './../utils/ISkill';
+import { SkillsService } from './../services/skills.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  constructor() { }
+  skills: ISkill[];
+  constructor(private skillsService: SkillsService) { }
 
   ngOnInit() {
+    console.log(this.skillsService);
+
+    this.skills = this.skillsService.getSkills();
   }
 
 }

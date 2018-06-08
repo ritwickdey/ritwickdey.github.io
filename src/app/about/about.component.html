@@ -17,5 +17,15 @@
       </p>
     </div>
   </div>
-  <div class="side2"></div>
+  <div class="side2">
+    <div class="skill-container">
+      <h1 class="skill-header">
+        Skills
+      </h1>
+      <div *ngFor="let skill of skills">
+        <h4 class="skill-type">{{skill.type}}</h4>
+        <h4 class="skill-names">{{skill.names.join(', ')}}</h4>
+      </div>
+    </div>
+  </div>
 </div>

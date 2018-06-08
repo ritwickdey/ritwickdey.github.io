@@ -1,16 +1,14 @@
 @import '../var';
-
 $text-card-shift:45%;
-
 .overlay {
   display: inline-block;
   height: 100vh;
   width: 100vw;
   top: 0;
-  left: -50%;
+  left: -55%;
   position: fixed;
   background: $color2;
-  transform: skew(-30deg);
+  transform: skew(-20deg);
   z-index: -1;
 }
 
@@ -19,11 +17,13 @@ $text-card-shift:45%;
   height: 100vh;
   width: 100vw;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
-  color: #f2f2f2;
+  color: $off-white;
   align-items: center;
+  padding: 5rem;
 
-  @media (max-width:1040px) {
+  @media (max-width: 1040px) {
     flex-direction: column;
   }
   .side1 {
@@ -34,7 +34,10 @@ $text-card-shift:45%;
     transform: translate(0%, -$text-card-shift/2);
   }
   .side2 {
-    flex: 1
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -51,4 +54,50 @@ $text-card-shift:45%;
 .dp-logo {
   font-size: 1.6rem;
   transform: translate(0%, $text-card-shift);
+}
+
+.skill-container {
+  padding: 3rem 1.8rem;
+}
+
+.skill-header {
+  margin: 2rem 0;
+  margin-bottom: 3.8rem;
+  position: relative;
+  letter-spacing: 2px;
+  padding-bottom: 0rem;
+  font-size: 3.2rem;
+  font-family: 'Cormorant Garamond', serif;
+  &:after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 3px;
+    top: 100%;
+    left: 0;
+    background: $off-white;
+  }
+}
+
+.skill-type {
+  position: relative;
+  margin: 1.2rem 0;
+  padding-bottom: 0.2rem;
+  font-size: 1.6rem;
+  &:after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 70%;
+    height: 1.5px;
+    top: 100%;
+    left: 0;
+    background: $off-white;
+  }
+}
+.skill-names {
+  margin-left: 2.8rem;
+  margin-bottom: 2rem;
+  margin-top: -0.6rem;
 }
