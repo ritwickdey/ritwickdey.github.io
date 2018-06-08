@@ -27,6 +27,7 @@ import { MaxLengthPipe } from './pipes/max-length.pipe';
 import { TypingComponent } from './typing/typing.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { appRouting } from './app.routing';
+import { NoEmojiPipe } from './pipes/no-emoji.pipe';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { appRouting } from './app.routing';
     AboutComponent,
     MaxLengthPipe,
     TypingComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    NoEmojiPipe
   ],
   imports: [
     BrowserModule,
