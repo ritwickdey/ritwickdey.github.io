@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond|Open+Sans:300i,300|Lato');
 @import './app/var';
-
 *,
 *::after,
 *::before {
@@ -15,13 +14,26 @@ html {
 }
 
 body {
-  width: 100vw;
-  // height: 100vh;
+  width: 100vw; // height: 100vh;
   overflow-x: hidden;
   background-color: $bg-color;
-
   &.isSideDrawerOpen {
     overflow: hidden;
+  }
+}
+
+.back-icon {
+  width: 3.5rem;
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 3.2rem 5rem;
+  cursor: pointer;
+  z-index: 11;
+  @media (max-width: 640px) {
+    width: 3rem;
+    margin: 1rem 2rem;
   }
 }
 

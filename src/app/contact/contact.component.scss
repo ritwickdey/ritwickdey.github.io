@@ -1,3 +1,4 @@
+@import '../var';
 .soon {
   height: 100vh;
   width: 100vw;
@@ -8,6 +9,7 @@
   color: #fff;
   font-family: 'Cormorant Garamond', serif;
   flex-direction: column;
+  background: $color2;
 }
 
 .contact-table {
