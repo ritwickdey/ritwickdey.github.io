@@ -1,15 +1,20 @@
 @import '../var';
 $text-card-shift:45%;
+$row-coloum-brk-point: 'max-width: 1040px';
 .overlay {
   display: inline-block;
   height: 100vh;
   width: 100vw;
   top: 0;
-  left: -55%;
+  left: -100%;
   position: fixed;
   background: $color2;
-  transform: skew(-20deg);
+  transform: scale(2) skew(-10deg);
   z-index: -1;
+  transition: 0.3s all ease-in-out;
+  @media ($row-coloum-brk-point) {
+    transform: scale(2) skew(-55deg);
+  }
 }
 
 .container {
@@ -22,19 +27,23 @@ $text-card-shift:45%;
   color: $off-white;
   align-items: center;
   padding: 5rem;
-
-  @media (max-width: 1040px) {
+  @media ($row-coloum-brk-point) {
     flex-direction: column;
   }
   .side1 {
     flex: 1;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    transform: translate(0%, -$text-card-shift/2);
+    @media ($row-coloum-brk-point) {
+      flex: none;
+      height: auto;
+    }
   }
   .side2 {
     flex: 1;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,18 +55,22 @@ $text-card-shift:45%;
   max-width: 32rem;
   background: #e74c3c;
   padding: 3rem 1.8rem;
-  padding-top: 6.5rem;
+  padding-top: 5.8rem;
   border-radius: 2rem;
   min-width: 34rem;
 }
 
 .dp-logo {
   font-size: 1.6rem;
-  transform: translate(0%, $text-card-shift);
+  transform: translate(0, 45%);
 }
 
 .skill-container {
   padding: 3rem 1.8rem;
+  margin-left: 5rem;
+  @media ($row-coloum-brk-point) {
+    margin: auto;
+  }
 }
 
 .skill-header {
@@ -96,6 +109,7 @@ $text-card-shift:45%;
     background: $off-white;
   }
 }
+
 .skill-names {
   margin-left: 2.8rem;
   margin-bottom: 2rem;
