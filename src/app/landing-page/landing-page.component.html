@@ -2,15 +2,9 @@
 <div class="root-container">
   <div class="navbar">
     <div class="nav-items">
-      <div class="nav-item">
-        <a [routerLink]="['/portfolio']">Portfolio</a>
-      </div>
-      <div class="nav-item">
-        <a [routerLink]="['/about']">About</a>
-      </div>
-      <div class="nav-item">
-        <a [routerLink]="['/contact']">Contact</a>
-      </div>
+      <a [routerLink]="['/portfolio']" class="nav-item">Portfolio</a>
+      <a [routerLink]="['/about']" class="nav-item">About</a>
+      <a [routerLink]="['/contact']" class="nav-item">Contact</a>
     </div>
   </div>
 
@@ -26,10 +20,7 @@
       <div class="strip"></div>
     </div>
 
-    <span
-      (click)="onExploreMeClick()"
-      (mouseover)="startTadaAnimation = false"
-      [ngClass]="{'tada-animation':startTadaAnimation}">
+    <span (click)="onExploreMeClick()" (mouseover)="startTadaAnimation = false" [ngClass]="{'tada-animation':startTadaAnimation}">
       <button class="special-btn">
         <span>
           Explore Me
