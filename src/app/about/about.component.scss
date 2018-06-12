@@ -40,6 +40,11 @@ $row-coloum-brk-point: 'max-width: 1040px';
       flex: none;
       height: auto;
     }
+    &>h1 {
+      margin-bottom: 0;
+      padding: 3rem 1.8rem;
+      padding-bottom: 0.4rem;
+    }
   }
   .side2 {
     flex: 1;
@@ -81,6 +86,7 @@ $row-coloum-brk-point: 'max-width: 1040px';
   padding-bottom: 0rem;
   font-size: 3.2rem;
   font-family: 'Cormorant Garamond', serif;
+  justify-content: flex-start;
   &:after {
     content: '';
     position: absolute;
