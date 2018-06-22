@@ -48,7 +48,7 @@ a {
   width: $max-width-height;
   cursor: pointer;
   transition: 0.3s all ease-in-out;
-  animation: fadeIn 0.8s ease-in-out 0.2s 1 both ;
+  animation: fade 1.4s ease-in-out 0.4s 1 both ;
   &:hover {
     transform: scale(1.1);
   }
@@ -121,7 +121,7 @@ a {
   flex: 1;
 }
 
-@keyframes fadeIn {
+@keyframes fade {
   0% {
     opacity: 0;
   }
