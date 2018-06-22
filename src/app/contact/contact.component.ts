@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 export class ContactComponent implements OnInit {
   constructor(private router: Router) {}
 
-  contact = {
+  contactProfile = {
     profile: [
       {
         name: 'Facebook',
@@ -56,6 +56,11 @@ export class ContactComponent implements OnInit {
     ]
   };
 
+  email = {
+    name: 'Email',
+    url: 'mailto:ritwickdey@outlook.com',
+    iconUrl: './assets/icons/email.svg'
+  };
   ngOnInit() {}
 
   onBackClick() {

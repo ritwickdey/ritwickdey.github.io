@@ -3,11 +3,16 @@
 </div>
 
 <div class="root">
+  <div>
+    <h1 class="page-header">CONTACT</h1>
+  </div>
   <div class="container">
     <div class="part part1">
       <div class="section icons flex-1">
-        <div *ngFor="let profileLinks of contact.profile" class="img icon">
-          <img [src]="profileLinks.iconUrl" [alt]="profileLinks.name">
+        <div *ngFor="let profileLinks of contactProfile.profile" class="img icon">
+          <a [href]="profileLinks.url" target="_blank">
+            <img [src]="profileLinks.iconUrl" [alt]="profileLinks.name">
+          </a>
         </div>
       </div>
       <div class="section min-section">
@@ -16,11 +21,18 @@
     </div>
     <div class="part part2">
       <div class="section min-section">
-        <app-dp-logo></app-dp-logo>
+        <div class="img icon">
+          <a [href]="email.url" target="_top">
+            <img [src]="email.iconUrl" [alt]="email.name">
+          </a>
+        </div>
+        <p>{{email.url.replace('mailto:', '')}}</p>
       </div>
       <div class="section flex-1">
-        <div *ngFor="let workProfile of contact.work" class="img icon">
-          <img [src]="workProfile.iconUrl" [alt]="workProfile.name">
+        <div *ngFor="let workProfile of contactProfile.work" class="img icon">
+          <a [href]="workProfile.url" target="_blank">
+            <img [src]="workProfile.iconUrl" [alt]="workProfile.name">
+          </a>
         </div>
       </div>
     </div>
