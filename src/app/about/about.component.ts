@@ -17,8 +17,6 @@ export class AboutComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    console.log(this.skillsService);
-
     this.skills = this.skillsService.getSkills();
   }
 

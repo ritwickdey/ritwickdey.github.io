@@ -30,14 +30,16 @@ const APP_ROUTES: Routes = [
   },
   {
     path: 'contact',
+    redirectTo: '/profiles'
+  },
+  {
+    path: 'profiles',
     component: ContactComponent,
     data: { animation: 'contact' }
   },
   { path: '**', redirectTo: '/' }
 ];
 
-export const appRouting = RouterModule.forRoot(APP_ROUTES,
-  {
-    useHash: true
-  }
-);
+export const appRouting = RouterModule.forRoot(APP_ROUTES, {
+  useHash: true
+});

@@ -72,16 +72,16 @@ import {
 export class NavigatorComponent implements OnInit {
   navLinks = [
     { displayName: 'Portfolio', url: '/portfolio' },
-    { displayName: 'About', url: '/about' },
-    { displayName: 'Contact', url: '/contact' },
+    { displayName: 'About & Skills', url: '/about' },
+    { displayName: 'Contacts & Profiles', url: '/profiles' },
     { displayName: 'Profile Card', url: '/profile-card' }
   ];
 
   @Output('cancellation') cancellation = new EventEmitter();
 
-  constructor(private router: Router) { }
+  constructor(private router: Router) {}
 
-  ngOnInit() { }
+  ngOnInit() {}
 
   onBgClick() {
     this.cancellation.emit();
