@@ -1,3 +1,28 @@
 <div (click)="onBackClick()" class="back-icon">
   <app-back-icon></app-back-icon>
 </div>
+
+<div class="root">
+  <div class="container">
+    <div class="part part1">
+      <div class="section icons flex-1">
+        <div *ngFor="let profileLinks of contact.profile" class="img icon">
+          <img [src]="profileLinks.iconUrl" [alt]="profileLinks.name">
+        </div>
+      </div>
+      <div class="section min-section">
+        <app-dp-logo></app-dp-logo>
+      </div>
+    </div>
+    <div class="part part2">
+      <div class="section min-section">
+        <app-dp-logo></app-dp-logo>
+      </div>
+      <div class="section flex-1">
+        <div *ngFor="let workProfile of contact.work" class="img icon">
+          <img [src]="workProfile.iconUrl" [alt]="workProfile.name">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
