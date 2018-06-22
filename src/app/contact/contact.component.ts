@@ -61,6 +61,12 @@ export class ContactComponent implements OnInit {
     url: 'mailto:ritwickdey@outlook.com',
     iconUrl: './assets/icons/email.svg'
   };
+
+  vscodeMarketplace = {
+    name: 'VSCode Extension Publisher',
+    url: 'https://marketplace.visualstudio.com/publishers/ritwickdey',
+    iconUrl: './assets/icons/vscode.svg'
+  };
   ngOnInit() {}
 
   onBackClick() {
