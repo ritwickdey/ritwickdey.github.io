@@ -28,6 +28,7 @@ a {
   letter-spacing: 1px;
   word-spacing: 1.5px;
   margin: 2rem 0;
+  user-select: none;
   font-family: 'Cormorant Garamond', serif; // font-weight: normal;
   &:after {
     content: '';
@@ -46,7 +47,8 @@ a {
   height: $max-width-height;
   width: $max-width-height;
   cursor: pointer;
-  transition: 0.3s all cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: 0.3s all ease-in-out;
+  animation: fadeIn 0.8s ease-in-out 0.2s 1 both ;
   &:hover {
     transform: scale(1.1);
   }
@@ -117,4 +119,13 @@ a {
 
 .flex-1 {
   flex: 1;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
