@@ -35,22 +35,22 @@ export class ContactComponent implements OnInit {
     work: [
       {
         name: 'GitHub',
-        url: 'https://facebook.com/deyRitwick',
+        url: 'https://github.com/ritwickdey',
         iconUrl: './assets/icons/github.svg'
       },
       {
         name: 'Hackerrank',
-        url: 'https://twitter.com/dey_ritwick',
+        url: 'https://hackerrank.com/ritwickdey',
         iconUrl: './assets/icons/hackerrank.svg'
       },
       {
         name: 'Stackoverflow',
-        url: 'https://www.linkedin.com/in/ritwickdey',
+        url: 'https://stackoverflow.com/story/ritwickdey',
         iconUrl: './assets/icons/stackoverflow.svg'
       },
       {
         name: 'Pluralsight',
-        url: 'https://www.instagram.com/ritwickdey/',
+        url: 'https://www.pluralsight.com/profile/ritwickdey',
         iconUrl: './assets/icons/pluralsight.svg'
       }
     ]
