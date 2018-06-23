@@ -27,7 +27,7 @@
         </a>
         <p>{{email.url.replace('mailto:', '')}}</p>
       </div>
-      <div class="section flex-1">
+      <div class="section icons flex-1">
         <a *ngFor="let workProfile of contactProfile.work" class="img icon" [href]="workProfile.url" target="_blank">
           <img [title]="workProfile.name" [src]="workProfile.iconUrl" [alt]="workProfile.name">
         </a>

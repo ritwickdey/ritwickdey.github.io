@@ -24,7 +24,7 @@ a {
 .page-header {
   color: $off-white;
   position: relative;
-  font-size: 3.2rem;
+  font-size: 3rem;
   letter-spacing: 1px;
   word-spacing: 1.5px;
   margin: 2rem 0;
@@ -53,7 +53,7 @@ a {
     transform: scale(1.1);
   }
   @media (max-width: 690px) {
-    $max-width-height: 4rem;
+    $max-width-height: 3rem;
     height: $max-width-height;
     width: $max-width-height;
   }
@@ -72,7 +72,7 @@ a {
 }
 
 .container {
-  width: 90%;
+  width: 95%;
   max-width: 75rem;
   display: flex;
   flex: 1;
@@ -81,14 +81,21 @@ a {
   flex-direction: column;
 }
 
+.icons {
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
 .section {
   background: $color2;
   display: flex;
   margin: 2px;
-  justify-content: space-evenly;
+  justify-content: space-around ;
   align-items: center;
   padding-top: 2.4rem;
-  padding-bottom: 2.4rem; // min-height: 14rem;
+  padding-bottom: 2.4rem;
+
+
   &.min-section {
     width: 35%;
     display: flex;
@@ -104,10 +111,12 @@ a {
       font-size: 0.8rem;
     }
     &>p {
-      margin: 0 1rem;
+      margin: 0px 1rem;
       width: 90%;
       text-align: center;
       word-break: break-word;
+      padding-top: 0.8rem;
+      margin-bottom: -0.8rem;
     }
   }
 }
