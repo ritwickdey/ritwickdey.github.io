@@ -19,8 +19,8 @@ export const liveServerData: IProject = {
     {
       title: 'About',
       data: [
-        'This extension is installed 512K times from marketplace (by 22.04.18)',
-        'Rating of this extension is 4.8 out of 5 (by 22.04.18)'
+        'This extension is installed more than 1M (10 lakhs) times from marketplace (by 03.07.18)',
+        'Rating of this extension is 4.8 out of 5 (by 03.07.18)'
       ]
     }
   ]
