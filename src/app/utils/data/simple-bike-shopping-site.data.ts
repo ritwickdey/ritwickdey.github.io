@@ -1,11 +1,11 @@
 import { IProject } from '../IProject';
 
 export const bikeShopData: IProject = {
-  id: '3',
+  id: '302A54B8-9BBB-4D8E-B7E0-BDA0B11CF6E5',
   name: 'Bike Shop Template 🚲',
-  description: 'Official Tech Fest (2018) Website of Our College',
-  projectLink: 'https://github.com/ritwickdey/bgi-tech-fest-2k18',
-  liveUrl: 'https://ritwickdey.github.io/bgi-tech-fest-2k18/',
+  description: 'A Sample basic HTML Template for front page of a Bike company',
+  projectLink: 'https://github.com/ritwickdey/simple-bike-shopping-site',
+  liveUrl: 'https://ritwickdey.github.io/simple-bike-shopping-site',
   features: [
     'Custom CSS & Bootstrap',
     'Parallax scrolling effect'
@@ -13,6 +13,7 @@ export const bikeShopData: IProject = {
   tags: ['html', 'css'],
   techStuff: [
     'HTML & CSS',
+    'design'
   ],
   additionalData: []
 };
