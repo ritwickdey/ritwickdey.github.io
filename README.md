@@ -4,7 +4,7 @@
 
 This is my portfolio website (SPA), designed with Adobe XD & developed with Angular.
 
-## URl
+## URL
 
 * [https://ritwickdey.github.io/ ](https://ritwickdey.github.io/) :cupid::sparkling_heart:
 
