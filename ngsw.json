@@ -1,0 +1,103 @@
+{
+  "configVersion": 1,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/favicon.ico",
+        "/index.html"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/assets/assert/contactIcon/email.svg",
+        "/assets/assert/contactIcon/facebook.svg",
+        "/assets/assert/contactIcon/github.svg",
+        "/assets/assert/contactIcon/linkedin.png",
+        "/assets/assert/contactIcon/pluralsight-icon.jpg",
+        "/assets/assert/contactIcon/twitter.svg",
+        "/assets/assert/devIcon/angular.svg",
+        "/assets/assert/devIcon/c.svg",
+        "/assets/assert/devIcon/csharp.svg",
+        "/assets/assert/devIcon/css.svg",
+        "/assets/assert/devIcon/dotnet.svg",
+        "/assets/assert/devIcon/html.svg",
+        "/assets/assert/devIcon/javascript.svg",
+        "/assets/assert/devIcon/typescript.svg",
+        "/assets/icons/email.svg",
+        "/assets/icons/facebook.svg",
+        "/assets/icons/github.svg",
+        "/assets/icons/hackerrank.svg",
+        "/assets/icons/instagram.svg",
+        "/assets/icons/linkedin.svg",
+        "/assets/icons/pluralsight.svg",
+        "/assets/icons/stackoverflow.svg",
+        "/assets/icons/twitter.svg",
+        "/assets/icons/vscode.svg",
+        "/assets/img/Profile-Pic-Ritwick-Dey.jpg",
+        "/assets/img/Profile-Pic-Ritwick-Dey.png",
+        "/assets/img/Profile-Pic-Ritwick-Dey2.jpg"
+      ],
+      "patterns": [
+        "https:\\/\\/fonts\\.googleapis\\.com\\/css\\?family=Cormorant\\+Garamond|Open\\+Sans:300i,300|Lato"
+      ]
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/assets/assert/contactIcon/email.svg": "af0aeb855d2af329995c625d079f2a8fae2ca6f7",
+    "/assets/assert/contactIcon/facebook.svg": "52cb36f7f0356099e1fce52e2d7a2894574e0ff4",
+    "/assets/assert/contactIcon/github.svg": "b01fe2b3e7767104261abce0655621bd1ab5fe49",
+    "/assets/assert/contactIcon/linkedin.png": "b583c366bc69a3cd759d6b269866f2e246bc1b02",
+    "/assets/assert/contactIcon/pluralsight-icon.jpg": "32cb39daa2219a04b9b4bd5c7498d130c7f3e9df",
+    "/assets/assert/contactIcon/twitter.svg": "70a0d0591e174965ed959c8a4bdff80694f3134c",
+    "/assets/assert/devIcon/angular.svg": "3b5be8774fc85a82957e394b87fdbe91500ece98",
+    "/assets/assert/devIcon/c.svg": "754ea3547835fe188f4b91c7ab5ecd3b531b0295",
+    "/assets/assert/devIcon/csharp.svg": "757268df04426428f3eacba6a53f6a8c4b70379a",
+    "/assets/assert/devIcon/css.svg": "cd3065aa8555501b91c007c4e263c305a3d225f1",
+    "/assets/assert/devIcon/dotnet.svg": "4c2b0e07a2c525c69777f11f7a350cead9aa37b7",
+    "/assets/assert/devIcon/html.svg": "3bfa0311c5a6a7e911b16d3ecd00b694882cba33",
+    "/assets/assert/devIcon/javascript.svg": "a1d14fa0dc2fdb210e664b35c454aaade6162a7c",
+    "/assets/assert/devIcon/typescript.svg": "45f4dcc3929ac3930a3d90d375ea174d43a1e69b",
+    "/assets/icons/email.svg": "24d87eb56057e2d91ed596b24429a495b267e56b",
+    "/assets/icons/facebook.svg": "b86b39c04ce1780925ba08497c3e6fd32295632a",
+    "/assets/icons/github.svg": "cc8b1122d828c2a5e64a2110ca1e8f12e7af507e",
+    "/assets/icons/hackerrank.svg": "23c2aecf9ca2cdd8ffd4499626fbd4998714b1d3",
+    "/assets/icons/instagram.svg": "123f011475b4a0e44219dda94f8226527c45cfb5",
+    "/assets/icons/linkedin.svg": "0de02c84dfb812531a80cce0decd4f3f8e23479e",
+    "/assets/icons/pluralsight.svg": "6674f0cdb731e168b01270bf5bf2c6dc593fccff",
+    "/assets/icons/stackoverflow.svg": "a9763bee0fc7ab49a851b1ef8295f26852f3123b",
+    "/assets/icons/twitter.svg": "97d8a5ac6b93b24c6f8f5532f43f124cc3db4b1e",
+    "/assets/icons/vscode.svg": "bfbf8a3d8dae9e2b5c9d917e0d37b92f2fa1cb90",
+    "/assets/img/Profile-Pic-Ritwick-Dey.jpg": "3b0ea28108f081ad5e64817b37a11ce7d33643fb",
+    "/assets/img/Profile-Pic-Ritwick-Dey.png": "7ab5501d6b1f00ab9c0b1046801aee8bf63356be",
+    "/assets/img/Profile-Pic-Ritwick-Dey2.jpg": "c2cc1b0dc6cb5786a1e046630be45fcb575cdc26",
+    "/favicon.ico": "fd61ac4e27163ada907c1090ef8a82e78437289b",
+    "/index.html": "b9ea43a83e08b9efb92696a83a75dc73b74b2edf"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^\\/]*\\.[^\\/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^\\/]*__[^\\/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^\\/]*__[^\\/]*\\/.*$"
+    }
+  ]
+}
