@@ -80,7 +80,6 @@
       content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi"
     />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <link rel="stylesheet" href="styles.de5cc5c25688ca28d7d4.css" />
   </head>
 
   <body></body>
@@ -178,7 +177,9 @@
         "main.66e9d797f0af2ca9f482.js",
       ];
 
-      return [old_root, js_scripts];
+      const css_styles = ["styles.de5cc5c25688ca28d7d4.css"];
+
+      return [old_root, js_scripts, css_styles];
     }
 
     function getNewRoot() {
@@ -187,28 +188,34 @@
     "message": "Hello, I'm Ritwick Dey - passionate software engineer.",
     "links": {
       "github": "https://github.com/ritwickdey",
-      "linkedin": "https://www.linkedin.com/in/ritwickdey",
+      "linkedin": "https://www.linkedin.com/in/ritwickdey"
     }
 }
 </pre>
       
       `;
-      return [new_root, []];
+      return [new_root, [], []];
     }
 
-    let root, scripts;
+    let root, scripts, css;
     if (window.location.href.indexOf("old=true") !== -1) {
-      [root, scripts] = getOldRoot();
+      [root, scripts, css] = getOldRoot();
     } else {
-      [root, scripts] = getNewRoot();
+      [root, scripts, css] = getNewRoot();
     }
 
     document.body.innerHTML = root;
 
-    scripts.forEach(script => {
-        const scriptElement = document.createElement('script');
-        scriptElement.src = script;
-        document.body.appendChild(scriptElement);
+    scripts.forEach((script) => {
+      const scriptElement = document.createElement("script");
+      scriptElement.src = script;
+      document.body.appendChild(scriptElement);
+    });
+    css.forEach((style) => {
+      const linkElement = document.createElement("link");
+      linkElement.rel = "stylesheet";
+      linkElement.href = style;
+      document.head.appendChild(linkElement);
     });
   </script>
 </html>
