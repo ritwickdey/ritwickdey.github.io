@@ -86,7 +86,10 @@
   <body></body>
 
   <script>
-    console.log("Loading Old Root...");
+    console.log("Loading Root...");
+    console.log(
+      "To view old version, append '?old=true' to the URL and hit Enter."
+    );
     function getOldRoot() {
       const old_root = `
 <app-root>
@@ -178,11 +181,31 @@
       return [old_root, js_scripts];
     }
 
-    const [old_root, js_scripts] = getOldRoot();
+    function getNewRoot() {
+      const new_root = `
+      <pre>{
+    "message": "Hello, I'm Ritwick Dey - passionate software engineer.",
+    "links": {
+      "github": "https://github.com/ritwickdey",
+      "linkedin": "https://www.linkedin.com/in/ritwickdey",
+    }
+}
+</pre>
+      
+      `;
+      return [new_root, []];
+    }
 
-    document.body.innerHTML = old_root;
+    let root, scripts;
+    if (window.location.href.indexOf("old=true") !== -1) {
+      [root, scripts] = getOldRoot();
+    } else {
+      [root, scripts] = getNewRoot();
+    }
 
-    js_scripts.forEach(script => {
+    document.body.innerHTML = root;
+
+    scripts.forEach(script => {
         const scriptElement = document.createElement('script');
         scriptElement.src = script;
         document.body.appendChild(scriptElement);
